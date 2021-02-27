@@ -91,31 +91,31 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-anydpi-v26\App Icon.png" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\yukihyo\yukihyo.csproj">
       <Project>{08697937-6BCF-4CA1-8246-CCB3853067F2}</Project>
       <Name>yukihyo</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\App Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\AppIcon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-hdpi\App Icon.png" />
+    <AndroidResource Include="Resources\drawable\AppIcon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-mdpi\App Icon.png" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\AppIcon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-xhdpi\App Icon.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\AppIcon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-xxhdpi\App Icon.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\AppIcon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-xxxhdpi\App Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\AppIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xxhdpi\AppIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ProjectExtensions>

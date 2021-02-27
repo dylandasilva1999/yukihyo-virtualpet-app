@@ -3,5 +3,7 @@
   <PropertyGroup>
     <SelectedDevice>Samsung SM-N975F</SelectedDevice>
     <DefaultDevice>pixel_2_pie_9_0_-_api_28</DefaultDevice>
+    <ProjectView>ProjectFiles</ProjectView>
+    <AndroidDesignerPreferredTheme>MainTheme</AndroidDesignerPreferredTheme>
   </PropertyGroup>
 </Project>
