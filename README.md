@@ -1,5 +1,11 @@
 <!-- PROJECT LOGO -->
 <br />
+
+![GitHub repo size](https://img.shields.io/github/repo-size/dylandasilva1999/spacify-app?color=%23f37723)
+![GitHub watchers](https://img.shields.io/github/watchers/dylandasilva1999/spacify-app?color=%23f37723)
+![GitHub language count](https://img.shields.io/github/languages/count/dylandasilva1999/spacify-app?color=%23f37723)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dylandasilva1999/spacify-app?color=%23f37723)
+
 <h6 align="center">Dylan da Silva IDV 301</h6>
 <p align="center">
 </br>
