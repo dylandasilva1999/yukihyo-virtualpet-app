@@ -50,6 +50,8 @@ Yukihyo, is a virtual pet application to inform users on the impact climate chan
 ### Built With
 
 * [Xamarin Forms]( https://docs.microsoft.com/en-us/xamarin/xamarin-forms/)
+* [C# language](https://docs.microsoft.com/en-us/dotnet/csharp/)
+* [Visual Studio](https://visualstudio.microsoft.com/)
 
 <img src="https://seeklogo.com/images/X/xamarin-logo-348B1EB629-seeklogo.com.png" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://seeklogo.com/images/C/c-sharp-c-logo-02F17714BA-seeklogo.com.png" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://static.wikia.nocookie.net/logopedia/images/6/62/Brand_Visual_Studio_Win_2019.svg/revision/latest/scale-to-width-down/340?cb=20191019024151" width="5%" height="5%">
 
