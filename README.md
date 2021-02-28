@@ -25,13 +25,13 @@
   * [How to install](#how-to-install)
 * [Unit Testing](#unit-testing)
 * [Features and Functionality](#features-and-functionality)
-   * [Plant a Tree]
-   * [Change Temperature]
-   * [Feed Marmots]
-   * [Catch Poacher]
-   * [Manual]
-   * [Name your Snow Leopard]
-   * [XP level up]
+   * [Plant a Tree](#plant-tree)
+   * [Change Temperature](#change-temperature)
+   * [Feed Marmots](#feed-marmots)
+   * [Catch Poacher](#catch-poacher)
+   * [Manual](#manual)
+   * [Name your Snow Leopard](#name-your-snow-leopard)
+   * [XP level up](#xp-level)
 * [Contributing](#contributing)
 * [License](#license)
 * [Acknowledgements](#acknowledgements)
@@ -50,6 +50,8 @@ Yukihyo, is a virtual pet application to inform users on the impact climate chan
 ### Built With
 
 * [Xamarin Forms]( https://docs.microsoft.com/en-us/xamarin/xamarin-forms/)
+
+<img src="https://seeklogo.com/images/X/xamarin-logo-348B1EB629-seeklogo.com.png" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://seeklogo.com/images/C/c-sharp-c-logo-02F17714BA-seeklogo.com.png" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://static.wikia.nocookie.net/logopedia/images/6/62/Brand_Visual_Studio_Win_2019.svg/revision/latest/scale-to-width-down/340?cb=20191019024151" width="5%" height="5%">
 
 <!-- GETTING STARTED -->
 ## Getting Started
