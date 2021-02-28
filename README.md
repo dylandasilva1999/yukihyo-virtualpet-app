@@ -5,7 +5,7 @@
 </br>
    
   <a href="https://github.com/dylandasilva1999/yukihyo-virtualpet-app ">
-    <img src="Images/App Icon.png" alt="Logo" width="140" height="140">
+    <img src="Images/AppIcon.png" alt="Logo" width="140" height="140">
   </a>
   
   <h3 align="center">Yukihyo</h3>
@@ -39,7 +39,7 @@
 
 
 <!--PROJECT DESCRIPTION-->
-## Project Description
+## About the Project
 
 According to an article posted by Team Wanderlust, the snow leopard was listed at number eight out of the 10 most endangered animals in the world. I chose the snow leopard to bring awareness to one of the most beautiful and unique animal species in the world.
 
