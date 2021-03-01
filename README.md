@@ -24,7 +24,7 @@
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
-* [Project Description](#project-description)
+* [About the Project](#about-the-project)
   * [Built with](#built-with)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
@@ -111,6 +111,10 @@ Choose your own creative cute name for your snow leopard.
 ### Manual
 
 Learn about the snow leopard, and become part of the community.
+
+### XP Level Up
+
+As you progress your snow leopard will level up.
 
 <!-- CONTRIBUTING -->
 ## Contributing
