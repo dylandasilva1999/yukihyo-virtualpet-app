@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "KWb+Rted4ZpEmXn+t2Zu2EqswJUhijT7YslKI5wtpqLX1hkVU0gwxAQ8tHlUR2cbcuVqiRypnmLsJkcKZvVmxA==",
+  "dgSpecHash": "AyawP0VKRf2+50RT1iUkFdfHVF7AFQJM8hCDS7ngqdEl/5gqyh2tHI8n6Hda2u2zXQFX5pAsAX5l+iOtebYX7w==",
   "success": true,
   "projectFilePath": "C:\\Users\\frost\\VisualStudioProjects\\yukihyo\\yukihyo\\yukihyo\\yukihyo.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\frost\\.nuget\\packages\\com.airbnb.xamarin.forms.lottie\\4.0.8\\com.airbnb.xamarin.forms.lottie.4.0.8.nupkg.sha512",
     "C:\\Users\\frost\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\frost\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\frost\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
