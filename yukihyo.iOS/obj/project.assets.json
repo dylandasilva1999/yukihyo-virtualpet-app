@@ -193,7 +193,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Com.Airbnb.Xamarin.Forms.Lottie": "4.0.8",
+          "Com.Airbnb.Xamarin.Forms.Lottie": "3.0.3",
           "Xamarin.Essentials": "1.5.3.2",
           "Xamarin.Forms": "4.8.0.1451",
           "Xamarin.Forms.InputKit": "3.5.0",
@@ -399,7 +399,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Com.Airbnb.Xamarin.Forms.Lottie": "4.0.8",
+          "Com.Airbnb.Xamarin.Forms.Lottie": "3.0.3",
           "Xamarin.Essentials": "1.5.3.2",
           "Xamarin.Forms": "4.8.0.1451",
           "Xamarin.Forms.InputKit": "3.5.0",
@@ -605,7 +605,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Com.Airbnb.Xamarin.Forms.Lottie": "4.0.8",
+          "Com.Airbnb.Xamarin.Forms.Lottie": "3.0.3",
           "Xamarin.Essentials": "1.5.3.2",
           "Xamarin.Forms": "4.8.0.1451",
           "Xamarin.Forms.InputKit": "3.5.0",
@@ -811,7 +811,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Com.Airbnb.Xamarin.Forms.Lottie": "4.0.8",
+          "Com.Airbnb.Xamarin.Forms.Lottie": "3.0.3",
           "Xamarin.Essentials": "1.5.3.2",
           "Xamarin.Forms": "4.8.0.1451",
           "Xamarin.Forms.InputKit": "3.5.0",

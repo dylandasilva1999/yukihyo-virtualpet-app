@@ -6,6 +6,14 @@
 
     <StackLayout>
 
+        <forms:AnimationView 
+			x:Name="animationView" 
+			Grid.Row="1"
+			Animation="loader.json" 
+			Loop="True" 
+			AutoPlay="True"
+			VerticalOptions="FillAndExpand" 
+			HorizontalOptions="FillAndExpand" />
 
     </StackLayout>
 

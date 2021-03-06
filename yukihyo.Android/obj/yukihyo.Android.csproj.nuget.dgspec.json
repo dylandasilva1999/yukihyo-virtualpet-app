@@ -42,9 +42,13 @@
       "frameworks": {
         "monoandroid90": {
           "dependencies": {
+            "Com.Airbnb.Android.Lottie": {
+              "target": "Package",
+              "version": "[3.0.6, )"
+            },
             "Com.Airbnb.Xamarin.Forms.Lottie": {
               "target": "Package",
-              "version": "[4.0.8, )"
+              "version": "[3.0.3, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
@@ -100,7 +104,7 @@
           "dependencies": {
             "Com.Airbnb.Xamarin.Forms.Lottie": {
               "target": "Package",
-              "version": "[4.0.8, )"
+              "version": "[3.0.3, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",

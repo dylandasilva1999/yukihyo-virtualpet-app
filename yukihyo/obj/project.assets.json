@@ -2,10 +2,10 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
-      "Com.Airbnb.Xamarin.Forms.Lottie/4.0.8": {
+      "Com.Airbnb.Xamarin.Forms.Lottie/3.0.3": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Forms": "4.5.0.657"
+          "Xamarin.Forms": "4.2.0.815419"
         },
         "compile": {
           "lib/netstandard2.0/Lottie.Forms.dll": {}
@@ -132,36 +132,30 @@
     }
   },
   "libraries": {
-    "Com.Airbnb.Xamarin.Forms.Lottie/4.0.8": {
-      "sha512": "8wA4CS9SqkRJj94UfsTGDZK6wv1Sw/WnbscDUx2k3nzv0jFI0TeoyNlJFzLo3RXBGG5mqASzwAEdTlEbvZ+cpA==",
+    "Com.Airbnb.Xamarin.Forms.Lottie/3.0.3": {
+      "sha512": "Lf0Q4K5WiqjAJRH12BJUOCfoKIMiPWrpn7gMNBrX+6pwjSiSPE96EUakaag0Q2Xj5bn9vJ48lVXlRoVIjBAgCw==",
       "type": "package",
-      "path": "com.airbnb.xamarin.forms.lottie/4.0.8",
+      "path": "com.airbnb.xamarin.forms.lottie/3.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
-        "com.airbnb.xamarin.forms.lottie.4.0.8.nupkg.sha512",
+        "com.airbnb.xamarin.forms.lottie.3.0.3.nupkg.sha512",
         "com.airbnb.xamarin.forms.lottie.nuspec",
         "icon.png",
-        "lib/monoandroid10.0/Lottie.Forms.dll",
-        "lib/monoandroid10.0/Lottie.Forms.pdb",
-        "lib/monoandroid10.0/Lottie.Forms.xml",
-        "lib/net472/Lottie.Forms.dll",
-        "lib/net472/Lottie.Forms.pdb",
-        "lib/net472/Lottie.Forms.xml",
-        "lib/netcoreapp3.1/Lottie.Forms.dll",
-        "lib/netcoreapp3.1/Lottie.Forms.pdb",
-        "lib/netcoreapp3.1/Lottie.Forms.xml",
+        "lib/monoandroid90/Lottie.Forms.dll",
+        "lib/monoandroid90/Lottie.Forms.pdb",
+        "lib/monoandroid90/Lottie.Forms.xml",
         "lib/netstandard2.0/Lottie.Forms.dll",
         "lib/netstandard2.0/Lottie.Forms.pdb",
         "lib/netstandard2.0/Lottie.Forms.xml",
         "lib/tizen40/Lottie.Forms.dll",
         "lib/tizen40/Lottie.Forms.pdb",
         "lib/tizen40/Lottie.Forms.xml",
-        "lib/uap10.0.17763/Lottie.Forms.dll",
-        "lib/uap10.0.17763/Lottie.Forms.pdb",
-        "lib/uap10.0.17763/Lottie.Forms.pri",
-        "lib/uap10.0.17763/Lottie.Forms.xml",
+        "lib/uap10.0.16299/Lottie.Forms.dll",
+        "lib/uap10.0.16299/Lottie.Forms.pdb",
+        "lib/uap10.0.16299/Lottie.Forms.pri",
+        "lib/uap10.0.16299/Lottie.Forms.xml",
         "lib/xamarinios10/Lottie.Forms.dll",
         "lib/xamarinios10/Lottie.Forms.pdb",
         "lib/xamarinios10/Lottie.Forms.xml",
@@ -953,7 +947,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "Com.Airbnb.Xamarin.Forms.Lottie >= 4.0.8",
+      "Com.Airbnb.Xamarin.Forms.Lottie >= 3.0.3",
       "NETStandard.Library >= 2.0.3",
       "Xamarin.Essentials >= 1.5.3.2",
       "Xamarin.Forms >= 4.8.0.1451",
@@ -1007,7 +1001,7 @@
         "dependencies": {
           "Com.Airbnb.Xamarin.Forms.Lottie": {
             "target": "Package",
-            "version": "[4.0.8, )"
+            "version": "[3.0.3, )"
           },
           "NETStandard.Library": {
             "suppressParent": "All",
