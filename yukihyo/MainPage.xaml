@@ -2,18 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
-             x:Class="yukihyo.MainPage">
+             x:Class="yukihyo.MainPage"
+             BackgroundColor="#2B657A">
 
     <StackLayout>
 
-        <forms:AnimationView 
-			x:Name="animationView" 
-			Grid.Row="1"
-			Animation="loader.json" 
-			Loop="True" 
-			AutoPlay="True"
-			VerticalOptions="FillAndExpand" 
-			HorizontalOptions="FillAndExpand" />
+        
 
     </StackLayout>
 
