@@ -26,7 +26,7 @@
                        Android="60" />
                 </Image.TranslationY>
             </Image>
-            <StackLayout Grid.Row="1" Padding="50" Margin="5,0,0,0" HorizontalOptions="Center">
+            <StackLayout Grid.Row="1" Padding="48" Margin="5,0,0,0" HorizontalOptions="Center">
                 <StackLayout.TranslationY>
                     <OnPlatform
                         x:TypeArguments="x:Double"
@@ -42,7 +42,7 @@
                 </Label>
                 <Label Style="{StaticResource RegularBodyWhite}"
                    Grid.Row="1"
-                   Text="Fun fact yukihyo is snow leopard in Japanese"
+                   Text="Fun fact: Yukihyo is snow leopard in Japanese."
                    HorizontalOptions="FillAndExpand"
                    HorizontalTextAlignment="Start"
                    LineHeight="1.2"

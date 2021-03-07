@@ -40,7 +40,7 @@
                             Android="-90" />
                 </Image.TranslationY>
             </Image>
-            <StackLayout Grid.Row="2" Padding="60" Margin="0,-60,0,0">
+            <StackLayout Grid.Row="2" Padding="48" Margin="0,-60,0,0">
                 <StackLayout.TranslationY>
                     <OnPlatform
                             x:TypeArguments="x:Double"
