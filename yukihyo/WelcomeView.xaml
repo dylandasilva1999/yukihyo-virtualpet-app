@@ -49,7 +49,7 @@
                 </StackLayout.TranslationY>
                 <Label Style="{StaticResource StylisedHeader}"
                    Grid.Row="2"
-                   Text="Yukihyo"
+                   Text="Yukihyo!"
                    HorizontalOptions="FillAndExpand"
                    HorizontalTextAlignment="Start"
                    x:Name="yukihyoText">

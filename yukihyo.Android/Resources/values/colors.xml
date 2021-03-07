@@ -2,7 +2,7 @@
 <resources>
 	<color name="launcher_background">#FFFFFF</color>
     <color name="white">#FFFFFF</color>
-    <color name="orange">#EF5F14</color>
+    <color name="orange">#F37722</color>
     <color name="light_blue">#80BFDD</color>
     <color name="blue">#2B657A</color>
 	<color name="dark_blue">#054450</color>

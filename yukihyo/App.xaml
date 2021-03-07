@@ -93,12 +93,31 @@
             <Setter Property="TextColor" Value="#FFFFFF"></Setter>
         </Style>
 
+        <!-- Input Name Text Style -->
+        <Style x:Key="InputNameText" TargetType="Label">
+            <Setter Property="FontFamily" Value="{StaticResource RegularBodyFont}"></Setter>
+            <Setter Property="FontSize" Value="20"></Setter>
+            <Setter Property="TextColor" Value="#BBBBBB"></Setter>
+        </Style>
+
         <!-- Orange Button Style -->
         <Style x:Key="ButtonOrange" TargetType="Button">
             <Setter Property="FontFamily" Value="{StaticResource BoldHeaderFont}"></Setter>
             <Setter Property="FontSize" Value="22"></Setter>
             <Setter Property="BackgroundColor" Value="#F37722"></Setter>
             <Setter Property="WidthRequest" Value="200"></Setter>
+            <Setter Property="HeightRequest" Value="50"></Setter>
+            <Setter Property="BorderRadius" Value="30"></Setter>
+            <Setter Property="TextColor" Value="#FFFFFF"></Setter>
+            <Setter Property="TextTransform" Value="None"></Setter>
+        </Style>
+
+        <!-- Blue Button Style -->
+        <Style x:Key="ButtonBlue" TargetType="Button">
+            <Setter Property="FontFamily" Value="{StaticResource BoldHeaderFont}"></Setter>
+            <Setter Property="FontSize" Value="22"></Setter>
+            <Setter Property="BackgroundColor" Value="#2B657A"></Setter>
+            <Setter Property="WidthRequest" Value="300"></Setter>
             <Setter Property="HeightRequest" Value="50"></Setter>
             <Setter Property="BorderRadius" Value="30"></Setter>
             <Setter Property="TextColor" Value="#FFFFFF"></Setter>
