@@ -17,4 +17,19 @@
     <PackageReference Include="Xamarin.Forms.InputKit" Version="3.5.0" />
     <PackageReference Include="Xamarin.Forms.PancakeView" Version="2.3.0.759" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="EnterNameView.xaml.cs">
+      <DependentUpon>EnterNameView.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="WelcomeView.xaml.cs">
+      <DependentUpon>WelcomeView.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="EnterNameView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
 </Project>

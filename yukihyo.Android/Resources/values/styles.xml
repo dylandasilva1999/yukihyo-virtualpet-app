@@ -3,10 +3,16 @@
 
 	<style name="MyTheme.Base" parent="Theme.AppCompat.NoActionBar">
 		<item name="android:windowActionBar">false</item>
+		<item name="textAllCaps">false</item>
+		<item name="android:textAllCaps">false</item>
+		<item name="android:textAppearanceButton">@style/button.text</item>
 	</style>
 
 	<style name="MyTheme" parent="MyTheme.Base">
 		<item name="android:windowActionBar">false</item>
+		<item name="textAllCaps">false</item>
+		<item name="android:textAllCaps">false</item>
+		<item name="android:textAppearanceButton">@style/button.text</item>
 	</style>
 
 	<style name="MyTheme.Splash" parent ="Theme.AppCompat.NoActionBar">
@@ -15,6 +21,13 @@
 		<item name="android:windowFullscreen">true</item>
 		<item name="android:windowContentOverlay">@null</item>
 		<item name="android:windowActionBar">true</item>
+		<item name="textAllCaps">false</item>
+		<item name="android:textAllCaps">false</item>
+		<item name="android:textAppearanceButton">@style/button.text</item>
+	</style>
+
+	<style name="button.text" parent="Base.TextAppearance.AppCompat.Button">
+		<item name="android:textAllCaps">false</item>
 	</style>
 	
 </resources>

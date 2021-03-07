@@ -20,6 +20,14 @@
         <string>UIInterfaceOrientationLandscapeLeft</string>
         <string>UIInterfaceOrientationLandscapeRight</string>
     </array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>proxima_nova_bold.otf</string>
+		<string>proxima_nova_semibold.otf</string>
+		<string>proxima_nova_regular.otf</string>
+		<string>proxima_nova_thin.otf</string>
+		<string>proxima_nova_soft.otf</string>
+	</array>
     <key>MinimumOSVersion</key>
     <string>8.0</string>
     <key>CFBundleDisplayName</key>

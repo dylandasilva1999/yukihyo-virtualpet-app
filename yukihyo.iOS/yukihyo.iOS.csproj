@@ -65,11 +65,19 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <ImageAsset Include="Assets.xcassets\logo_iconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\logo_iconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\landing_imageset\Contents.json" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <BundleResource Include="Resources\loader.json" />
+    <BundleResource Include="Resources\proxima_nova_soft.otf" />
+    <BundleResource Include="Resources\proxima_nova_bold.otf" />
+    <BundleResource Include="Resources\proxima_nova_regular.otf" />
+    <BundleResource Include="Resources\proxima_nova_semibold.otf" />
+    <BundleResource Include="Resources\proxima_nova_thin.otf" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -139,81 +147,211 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon100.png" />
+    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon100.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon1024.png" />
+    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon1024.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon114.png" />
+    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon114.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon120.png" />
+    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon120.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon128.png" />
+    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon128.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon144.png" />
+    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon144.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon152.png" />
+    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon152.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon16.png" />
+    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon16.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon167.png" />
+    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon167.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon180.png" />
+    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon180.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon20.png" />
+    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon20.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon256.png" />
+    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon256.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon29.png" />
+    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon29.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon32.png" />
+    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon32.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon40.png" />
+    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon40.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon50.png" />
+    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon50.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon512.png" />
+    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon512.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon57.png" />
+    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon57.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon58.png" />
+    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon58.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon60.png" />
+    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon60.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon64.png" />
+    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon64.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon72.png" />
+    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon72.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon76.png" />
+    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon76.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon80.png" />
+    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon80.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon87.png" />
+    <ImageAsset Include="Assets.xcassets\logo_iconset\Icon87.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Assets.xcassets\logo_iconset\Iconwatch.png" />
+    <ImageAsset Include="Assets.xcassets\logo_iconset\Iconwatch.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\landing_imageset\Icon100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\landing_imageset\Icon1024.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\landing_imageset\Icon114.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\landing_imageset\Icon120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\landing_imageset\Icon128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\landing_imageset\Icon144.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\landing_imageset\Icon152.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\landing_imageset\Icon16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\landing_imageset\Icon167.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\landing_imageset\Icon180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\landing_imageset\Icon20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\landing_imageset\Icon256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\landing_imageset\Icon29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\landing_imageset\Icon32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\landing_imageset\Icon40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\landing_imageset\Icon50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\landing_imageset\Icon512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\landing_imageset\Icon57.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\landing_imageset\Icon58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\landing_imageset\Icon60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\landing_imageset\Icon64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\landing_imageset\Icon72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\landing_imageset\Icon76.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\landing_imageset\Icon80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\landing_imageset\Icon87.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\landing_imageset\Iconwatch.png" />
   </ItemGroup>
 </Project>

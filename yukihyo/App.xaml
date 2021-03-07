@@ -1,8 +1,109 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="yukihyo.App">
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" x:Class="yukihyo.App">
     <Application.Resources>
+
+        <!-- Bold Header Font -->
+        <OnPlatform x:Key="BoldHeaderFont" x:TypeArguments="x:String">
+            <On Platform="Android" Value="proxima_nova_bold.otf#Proxima Bold"></On>
+            <On Platform="iOS" Value="proxima_nova_bold"></On>
+        </OnPlatform>
+
+        <!-- Semibold Header Font -->
+        <OnPlatform x:Key="SemiboldBodyFont" x:TypeArguments="x:String">
+            <On Platform="Android" Value="proxima_nova_semibold.otf#Proxima Semibold"></On>
+            <On Platform="iOS" Value="proxima_nova_semibold"></On>
+        </OnPlatform>
+
+        <!-- Regular Header Font -->
+        <OnPlatform x:Key="RegularBodyFont" x:TypeArguments="x:String">
+            <On Platform="Android" Value="proxima_nova_regular.otf#Proxima Regular"></On>
+            <On Platform="iOS" Value="proxima_nova_regular"></On>
+        </OnPlatform>
+
+        <!-- Thin Header Font -->
+        <OnPlatform x:Key="ThinHeaderFont" x:TypeArguments="x:String">
+            <On Platform="Android" Value="proxima_nova_thin.otf#Proxima Thin"></On>
+            <On Platform="iOS" Value="proxima_nova_thin"></On>
+        </OnPlatform>
+
+        <!-- Stylised Header Font -->
+        <OnPlatform x:Key="StylisedHeaderFont" x:TypeArguments="x:String">
+            <On Platform="Android" Value="proxima_nova_soft.otf#Proxima Soft"></On>
+            <On Platform="iOS" Value="proxima_nova_soft"></On>
+        </OnPlatform>
+
+        <!-- Welcome Header Style -->
+        <Style x:Key="WelcomeHeader" TargetType="Label">
+            <Setter Property="FontFamily" Value="{StaticResource BoldHeaderFont}"></Setter>
+            <Setter Property="FontSize" Value="38"></Setter>
+            <Setter Property="TextColor" Value="#FFFFFF"></Setter>
+        </Style>
+
+        <!-- Sub Welcome Header Style -->
+        <Style x:Key="SubWelcomeHeader" TargetType="Label">
+            <Setter Property="FontFamily" Value="{StaticResource ThinHeaderFont}"></Setter>
+            <Setter Property="FontSize" Value="25"></Setter>
+            <Setter Property="TextColor" Value="#FFFFFF"></Setter>
+            <Setter Property="Margin" Value="0,-10,0,0"></Setter>
+        </Style>
+
+        <!-- Stylised Header Style -->
+        <Style x:Key="StylisedHeader" TargetType="Label">
+            <Setter Property="FontFamily" Value="{StaticResource StylisedHeaderFont}"></Setter>
+            <Setter Property="FontSize" Value="38"></Setter>
+            <Setter Property="TextColor" Value="#F37722"></Setter>
+        </Style>
+
+        <!-- Regular Body Black Style -->
+        <Style x:Key="RegularBodyBlack" TargetType="Label">
+            <Setter Property="FontFamily" Value="{StaticResource RegularBodyFont}"></Setter>
+            <Setter Property="FontSize" Value="20"></Setter>
+            <Setter Property="TextColor" Value="#373737"></Setter>
+        </Style>
+
+        <!-- Regular Body White Style -->
+        <Style x:Key="RegularBodyWhite" TargetType="Label">
+            <Setter Property="FontFamily" Value="{StaticResource RegularBodyFont}"></Setter>
+            <Setter Property="FontSize" Value="20"></Setter>
+            <Setter Property="TextColor" Value="#FFFFFF"></Setter>
+        </Style>
+
+        <!-- Name Yukihyo Header Style -->
+        <Style x:Key="NameYukihyoHeader" TargetType="Label">
+            <Setter Property="FontFamily" Value="{StaticResource BoldHeaderFont}"></Setter>
+            <Setter Property="FontSize" Value="32"></Setter>
+            <Setter Property="TextColor" Value="#FFFFFF"></Setter>
+        </Style>
+
+        <!-- Manual Header Style -->
+        <Style x:Key="ManualHeader" TargetType="Label">
+            <Setter Property="FontFamily" Value="{StaticResource BoldHeaderFont}"></Setter>
+            <Setter Property="FontSize" Value="32"></Setter>
+            <Setter Property="TextColor" Value="#FFFFFF"></Setter>
+        </Style>
+
+        <!-- Stats Header Style -->
+        <Style x:Key="StatsHeader" TargetType="Label">
+            <Setter Property="FontFamily" Value="{StaticResource RegularBodyFont}"></Setter>
+            <Setter Property="FontSize" Value="14"></Setter>
+            <Setter Property="TextColor" Value="#FFFFFF"></Setter>
+        </Style>
+
+        <!-- Orange Button Style -->
+        <Style x:Key="ButtonOrange" TargetType="Button">
+            <Setter Property="FontFamily" Value="{StaticResource BoldHeaderFont}"></Setter>
+            <Setter Property="FontSize" Value="22"></Setter>
+            <Setter Property="BackgroundColor" Value="#F37722"></Setter>
+            <Setter Property="WidthRequest" Value="200"></Setter>
+            <Setter Property="HeightRequest" Value="50"></Setter>
+            <Setter Property="BorderRadius" Value="30"></Setter>
+            <Setter Property="TextColor" Value="#FFFFFF"></Setter>
+            <Setter Property="TextTransform" Value="None"></Setter>
+        </Style>
 
     </Application.Resources>
 </Application>

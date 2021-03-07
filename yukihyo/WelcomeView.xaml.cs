@@ -14,5 +14,11 @@ namespace yukihyo
 		{
 			InitializeComponent();
 		}
+
+		/* Navigation */
+		async void Tapped(System.Object sender, System.EventArgs e)
+		{
+			await Navigation.PushModalAsync(new EnterNameView());
+		}
 	}
 }

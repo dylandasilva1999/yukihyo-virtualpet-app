@@ -4,6 +4,6 @@
     <SelectedDevice>Pixel_3_API_28</SelectedDevice>
     <DefaultDevice>Pixel_3_API_28</DefaultDevice>
     <ProjectView>ProjectFiles</ProjectView>
-    <AndroidDesignerPreferredTheme>MainTheme</AndroidDesignerPreferredTheme>
+    <AndroidDesignerPreferredTheme>Theme.AppCompat.Light.NoActionBar</AndroidDesignerPreferredTheme>
   </PropertyGroup>
 </Project>
