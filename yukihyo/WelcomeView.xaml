@@ -10,7 +10,7 @@
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
-                <RowDefinition Height="250"/>
+                <RowDefinition Height="220"/>
                 <RowDefinition Height="450"/>
             </Grid.RowDefinitions>
             <BoxView
@@ -28,24 +28,24 @@
                 </BoxView.HeightRequest>
             </BoxView>
             <Image Grid.Row="2"
-                   WidthRequest="300"
-                   HeightRequest="300"
-                   Source="landing_screen"
-                   x:Name="landingImage"
-                   VerticalOptions="Start">
+                WidthRequest="280"
+                HeightRequest="280"
+                Source="landing_screen"
+                x:Name="landingImage"
+                VerticalOptions="Start">
                 <Image.TranslationY>
                     <OnPlatform
-                            x:TypeArguments="x:Double"
-                            iOS="-90"
-                            Android="-90" />
+                  x:TypeArguments="x:Double"
+                  iOS="-90"
+                  Android="-90" />
                 </Image.TranslationY>
             </Image>
             <StackLayout Grid.Row="2" Padding="48" Margin="0,-60,0,0">
                 <StackLayout.TranslationY>
-                    <OnPlatform
-                            x:TypeArguments="x:Double"
-                            iOS="220"
-                            Android="220" />
+                   <OnPlatform
+                     x:TypeArguments="x:Double"
+                     iOS="220"
+                     Android="220" />
                 </StackLayout.TranslationY>
                 <Label Style="{StaticResource StylisedHeader}"
                    Grid.Row="2"
