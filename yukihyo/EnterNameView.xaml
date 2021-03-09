@@ -22,16 +22,16 @@
                 <Image.TranslationY>
                     <OnPlatform
                        x:TypeArguments="x:Double"
-                       iOS="60"
-                       Android="60" />
+                       iOS="45"
+                       Android="45" />
                 </Image.TranslationY>
             </Image>
             <StackLayout Grid.Row="1" Padding="48" Margin="5,0,0,0" HorizontalOptions="Center">
                 <StackLayout.TranslationY>
                     <OnPlatform
                         x:TypeArguments="x:Double"
-                        iOS="-30"
-                        Android="-30" />
+                        iOS="-50"
+                        Android="-50" />
                 </StackLayout.TranslationY>
                 <Label Style="{StaticResource NameYukihyoHeader}"
                    Grid.Row="1"

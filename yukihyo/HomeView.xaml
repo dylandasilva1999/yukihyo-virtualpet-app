@@ -23,7 +23,7 @@
                        Type=RelativeToParent,
                        Property=Height,
                        Factor=0,
-                       Constant=30}">
+                       Constant=20}">
                 <RelativeLayout>
                     <Image
                         Source="menu_icon"
@@ -40,13 +40,13 @@
                        Type=RelativeToParent,
                        Property=Width, 
                        Factor=0.65,
-                       Constant=30}"
+                       Constant=35}"
                     RelativeLayout.YConstraint=
                     "{ConstraintExpression 
                        Type=RelativeToParent,
                        Property=Height,
                        Factor=0,
-                       Constant=42}">
+                       Constant=35}">
                 <Frame 
                         BackgroundColor="#F37722" 
                         Padding="5" 
@@ -73,8 +73,8 @@
                 <StackLayout.TranslationY>
                     <OnPlatform
                         x:TypeArguments="x:Double"
-                        iOS="90"
-                        Android="90" />
+                        iOS="70"
+                        Android="70" />
                 </StackLayout.TranslationY>
                 <Label
                     x:Name="YukihyoName"
@@ -153,7 +153,6 @@
                             Grid.Column="1"
                             x:Name="TreesProgressBar"
                             Progress="0.3"
-                            Height="15"
                             ProgressColor="#F37722"
                             Margin="35,35,0,0"
                         />
@@ -212,7 +211,6 @@
                             Grid.Column="1"
                             x:Name="TemperatureProgressBar"
                             Progress="0.3"
-                            Height="15"
                             ProgressColor="#F37722"
                             Margin="35,8,0,0"
                         />
@@ -288,7 +286,6 @@
                             Grid.Column="1"
                             x:Name="HungerProgressBar"
                             Progress="0.3"
-                            Height="15"
                             ProgressColor="#F37722"
                             Margin="35,22,0,0"
                         />
@@ -364,7 +361,6 @@
                             Grid.Column="1"
                             x:Name="safetyProgressBar"
                             Progress="0.3"
-                            Height="15"
                             ProgressColor="#F37722"
                             Margin="35,22,0,0"
                         />
