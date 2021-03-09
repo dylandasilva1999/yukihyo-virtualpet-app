@@ -63,7 +63,8 @@
                         Style="{StaticResource ButtonBlue}"
                         Text="Start"
                         Margin="0,30,0,0"
-                        TextColor="#FFFFFF">
+                        TextColor="#FFFFFF"
+                        Clicked="Start">
                 </Button>
             </StackLayout>
         </Grid>

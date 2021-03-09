@@ -89,7 +89,7 @@
         <!-- Stats Header Style -->
         <Style x:Key="StatsHeader" TargetType="Label">
             <Setter Property="FontFamily" Value="{StaticResource RegularBodyFont}"></Setter>
-            <Setter Property="FontSize" Value="14"></Setter>
+            <Setter Property="FontSize" Value="16"></Setter>
             <Setter Property="TextColor" Value="#FFFFFF"></Setter>
         </Style>
 
@@ -98,6 +98,13 @@
             <Setter Property="FontFamily" Value="{StaticResource RegularBodyFont}"></Setter>
             <Setter Property="FontSize" Value="20"></Setter>
             <Setter Property="TextColor" Value="#BBBBBB"></Setter>
+        </Style>
+
+        <!-- Age Body Style -->
+        <Style x:Key="Age" TargetType="Label">
+            <Setter Property="FontFamily" Value="{StaticResource BoldHeaderFont}"></Setter>
+            <Setter Property="FontSize" Value="14"></Setter>
+            <Setter Property="TextColor" Value="#FFFFFF"></Setter>
         </Style>
 
         <!-- Orange Button Style -->

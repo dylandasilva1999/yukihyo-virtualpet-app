@@ -1,0 +1,398 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="yukihyo.HomeView"
+             xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             BackgroundColor="#FFFFFF">
+    <ContentPage.Content>
+
+        <RelativeLayout x:Name="Container">
+            <pancake:PancakeView
+                    CornerRadius="13"
+                    HeightRequest="50"
+                    WidthRequest="50"
+                    BackgroundColor="#F37722"
+                    RelativeLayout.XConstraint=
+                    "{ConstraintExpression 
+                       Type=RelativeToParent,
+                       Property=Width, 
+                       Factor=0,
+                       Constant=30}"
+                    RelativeLayout.YConstraint=
+                    "{ConstraintExpression 
+                       Type=RelativeToParent,
+                       Property=Height,
+                       Factor=0,
+                       Constant=30}">
+                <RelativeLayout>
+                    <Image
+                        Source="menu_icon"
+                        WidthRequest="28"
+                        HeightRequest="30"
+                        TranslationX="10"
+                        TranslationY="10">
+                    </Image>
+                </RelativeLayout>
+            </pancake:PancakeView>
+            <RelativeLayout
+                RelativeLayout.XConstraint=
+                    "{ConstraintExpression 
+                       Type=RelativeToParent,
+                       Property=Width, 
+                       Factor=0.65,
+                       Constant=30}"
+                    RelativeLayout.YConstraint=
+                    "{ConstraintExpression 
+                       Type=RelativeToParent,
+                       Property=Height,
+                       Factor=0,
+                       Constant=42}">
+                <Frame 
+                        BackgroundColor="#F37722" 
+                        Padding="5" 
+                        WidthRequest="60" 
+                        HeightRequest="16" 
+                        CornerRadius="40">
+                    <Label 
+                        WidthRequest="40"
+                        Style="{StaticResource Age}"
+                        Text="5 Days" 
+                        HorizontalTextAlignment="Center">
+                    </Label>
+                </Frame>
+            </RelativeLayout>
+            <StackLayout Margin="0,0,0,0" Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"
+                         RelativeLayout.WidthConstraint=
+                            "{ConstraintExpression Type=RelativeToParent,
+                            Property=Width,
+                            Factor=1}"
+                         RelativeLayout.HeightConstraint=
+                            "{ConstraintExpression Type=RelativeToParent,
+                            Property=Height,
+                            Factor=1}">
+                <StackLayout.TranslationY>
+                    <OnPlatform
+                        x:TypeArguments="x:Double"
+                        iOS="90"
+                        Android="90" />
+                </StackLayout.TranslationY>
+                <Label
+                    x:Name="YukihyoName"
+                    Text="Gorgeous"
+                    Style="{StaticResource StylisedHeader}"
+                    HorizontalOptions="Center" 
+                    HorizontalTextAlignment="Center" 
+                />
+                <Label
+                    x:Name="SubNameText"
+                    Text="The Snow Leopard"
+                    Style="{StaticResource RegularBodyBlack}"
+                    HorizontalOptions="Center" 
+                    HorizontalTextAlignment="Center"
+                    Margin="0,-5,0,0"
+                />
+                <Image
+                    x:Name="yukihyoImage"
+                    Source="sad_yukihyo"
+                    WidthRequest="280"
+                    HeightRequest="280">
+                    <Image.TranslationY>
+                        <OnPlatform
+                           x:TypeArguments="x:Double"
+                           iOS="-30"
+                           Android="-30" />
+                    </Image.TranslationY>
+                </Image>
+                <pancake:PancakeView
+                    CornerRadius="12"
+                    HeightRequest="120"
+                    WidthRequest="50"
+                    Margin="40,0,40,0"
+                    BackgroundColor="#2B657A"
+                    TranslationY="-60">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40" />
+                            <ColumnDefinition Width="235" />
+                        </Grid.ColumnDefinitions>
+                        <Image
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            x:Name="treeIcon"
+                            Source="tree_icon"
+                            WidthRequest="20"
+                            HeightRequest="20">
+                            <Image.TranslationX>
+                                <OnPlatform
+                                   x:TypeArguments="x:Double"
+                                   iOS="20"
+                                   Android="20" />
+                            </Image.TranslationX>
+                            <Image.TranslationY>
+                                <OnPlatform
+                                   x:TypeArguments="x:Double"
+                                   iOS="5"
+                                   Android="5" />
+                            </Image.TranslationY>
+                        </Image>
+                        <Label
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            x:Name="treeStatsText"
+                            Text="Trees"
+                            Style="{StaticResource StatsHeader}"
+                            HorizontalOptions="Start" 
+                            Margin="35,20,0,0"
+                        />
+                        <ProgressBar
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            x:Name="TreesProgressBar"
+                            Progress="0.3"
+                            Height="15"
+                            ProgressColor="#F37722"
+                            Margin="35,35,0,0"
+                        />
+                        <Image
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            x:Name="treeStateIcon"
+                            Source="sad_icon"
+                            WidthRequest="25"
+                            HeightRequest="25"
+                            HorizontalOptions="End" >
+                            <Image.TranslationX>
+                                <OnPlatform
+                                   x:TypeArguments="x:Double"
+                                   iOS="5"
+                                   Android="5" />
+                            </Image.TranslationX>
+                            <Image.TranslationY>
+                                <OnPlatform
+                                   x:TypeArguments="x:Double"
+                                   iOS="0"
+                                   Android="0" />
+                            </Image.TranslationY>
+                        </Image>
+                        <Image
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            x:Name="temperatureIcon"
+                            Source="temperature_icon"
+                            WidthRequest="20"
+                            HeightRequest="20">
+                            <Image.TranslationX>
+                                <OnPlatform
+                                   x:TypeArguments="x:Double"
+                                   iOS="22"
+                                   Android="22" />
+                            </Image.TranslationX>
+                            <Image.TranslationY>
+                                <OnPlatform
+                                   x:TypeArguments="x:Double"
+                                   iOS="-8"
+                                   Android="-8" />
+                            </Image.TranslationY>
+                        </Image>
+                        <Label
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            x:Name="temperatureStatsText"
+                            Text="Temperature"
+                            Style="{StaticResource StatsHeader}"
+                            HorizontalOptions="Start" 
+                            Margin="35,5,0,0"
+                        />
+                        <ProgressBar
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            x:Name="TemperatureProgressBar"
+                            Progress="0.3"
+                            Height="15"
+                            ProgressColor="#F37722"
+                            Margin="35,8,0,0"
+                        />
+                        <Image
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            x:Name="tempStateIcon"
+                            Source="sad_icon"
+                            WidthRequest="25"
+                            HeightRequest="25"
+                            HorizontalOptions="End" >
+                            <Image.TranslationX>
+                                <OnPlatform
+                                   x:TypeArguments="x:Double"
+                                   iOS="5"
+                                   Android="5" />
+                            </Image.TranslationX>
+                            <Image.TranslationY>
+                                <OnPlatform
+                                   x:TypeArguments="x:Double"
+                                   iOS="-15"
+                                   Android="-15" />
+                            </Image.TranslationY>
+                        </Image>
+                    </Grid>
+                </pancake:PancakeView>
+                <pancake:PancakeView
+                    CornerRadius="12"
+                    HeightRequest="68"
+                    WidthRequest="50"
+                    Margin="40,0,40,0"
+                    BackgroundColor="#2B657A"
+                    TranslationY="-50">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40" />
+                            <ColumnDefinition Width="235" />
+                        </Grid.ColumnDefinitions>
+                        <Image
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            x:Name="marmotIcon"
+                            Source="hunger_icon"
+                            WidthRequest="40"
+                            HeightRequest="40">
+                            <Image.TranslationX>
+                                <OnPlatform
+                                   x:TypeArguments="x:Double"
+                                   iOS="20"
+                                   Android="20" />
+                            </Image.TranslationX>
+                            <Image.TranslationY>
+                                <OnPlatform
+                                   x:TypeArguments="x:Double"
+                                   iOS="0"
+                                   Android="0" />
+                            </Image.TranslationY>
+                        </Image>
+                        <Label
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            x:Name="hungerStatsText"
+                            Text="Hunger"
+                            Style="{StaticResource StatsHeader}"
+                            HorizontalOptions="Start" 
+                            Margin="35,16,0,0"
+                        />
+                        <ProgressBar
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            x:Name="HungerProgressBar"
+                            Progress="0.3"
+                            Height="15"
+                            ProgressColor="#F37722"
+                            Margin="35,22,0,0"
+                        />
+                        <Image
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            x:Name="hungerStateIcon"
+                            Source="sad_icon"
+                            WidthRequest="25"
+                            HeightRequest="25"
+                            HorizontalOptions="End" >
+                            <Image.TranslationX>
+                                <OnPlatform
+                                   x:TypeArguments="x:Double"
+                                   iOS="5"
+                                   Android="5" />
+                            </Image.TranslationX>
+                            <Image.TranslationY>
+                                <OnPlatform
+                                   x:TypeArguments="x:Double"
+                                   iOS="-7"
+                                   Android="-7" />
+                            </Image.TranslationY>
+                        </Image>
+                    </Grid>
+                </pancake:PancakeView>
+                <pancake:PancakeView
+                    CornerRadius="12"
+                    HeightRequest="68"
+                    WidthRequest="50"
+                    Margin="40,0,40,0"
+                    BackgroundColor="#2B657A"
+                    TranslationY="-40">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40" />
+                            <ColumnDefinition Width="235" />
+                        </Grid.ColumnDefinitions>
+                        <Image
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            x:Name="safetyIcon"
+                            Source="safety_icon"
+                            WidthRequest="40"
+                            HeightRequest="40">
+                            <Image.TranslationX>
+                                <OnPlatform
+                                   x:TypeArguments="x:Double"
+                                   iOS="20"
+                                   Android="20" />
+                            </Image.TranslationX>
+                            <Image.TranslationY>
+                                <OnPlatform
+                                   x:TypeArguments="x:Double"
+                                   iOS="0"
+                                   Android="0" />
+                            </Image.TranslationY>
+                        </Image>
+                        <Label
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            x:Name="safetyStatsText"
+                            Text="Safety"
+                            Style="{StaticResource StatsHeader}"
+                            HorizontalOptions="Start" 
+                            Margin="35,16,0,0"
+                        />
+                        <ProgressBar
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            x:Name="safetyProgressBar"
+                            Progress="0.3"
+                            Height="15"
+                            ProgressColor="#F37722"
+                            Margin="35,22,0,0"
+                        />
+                        <Image
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            x:Name="safetyStateIcon"
+                            Source="sad_icon"
+                            WidthRequest="25"
+                            HeightRequest="25"
+                            HorizontalOptions="End" >
+                            <Image.TranslationX>
+                                <OnPlatform
+                                   x:TypeArguments="x:Double"
+                                   iOS="5"
+                                   Android="5" />
+                            </Image.TranslationX>
+                            <Image.TranslationY>
+                                <OnPlatform
+                                   x:TypeArguments="x:Double"
+                                   iOS="-7"
+                                   Android="-7" />
+                            </Image.TranslationY>
+                        </Image>
+                    </Grid>
+                </pancake:PancakeView>
+            </StackLayout>
+        </RelativeLayout>
+
+    </ContentPage.Content>
+</ContentPage>
