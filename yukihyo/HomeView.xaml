@@ -24,6 +24,9 @@
                        Property=Height,
                        Factor=0,
                        Constant=20}">
+                <pancake:PancakeView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TappedOnMenu"/>
+                </pancake:PancakeView.GestureRecognizers>
                 <RelativeLayout>
                     <Image
                         Source="menu_icon"

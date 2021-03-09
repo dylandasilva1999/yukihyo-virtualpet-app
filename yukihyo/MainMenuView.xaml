@@ -1,10 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="yukihyo.MainMenuView">
+             x:Class="yukihyo.MainMenuView"
+             xmlns:st="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions"
+             BackgroundColor="#2B657A">
     <ContentPage.Content>
 
-        
+        <RelativeLayout>
+            <Label
+                    Text="Gorgeous"
+                    Style="{StaticResource StylisedHeader}"
+                    HorizontalOptions="Center" 
+                    HorizontalTextAlignment="Center" 
+            />
+        </RelativeLayout>
         
     </ContentPage.Content>
 </ContentPage>

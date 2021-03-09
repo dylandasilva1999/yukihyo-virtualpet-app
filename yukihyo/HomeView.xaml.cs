@@ -17,7 +17,8 @@ namespace yukihyo
             InitializeComponent();
         }
 
-        async void TappedMenu(System.Object sender, System.EventArgs e)
+        /*Navigation*/
+        async void TappedOnMenu(System.Object sender, System.EventArgs e)
         {
             await Navigation.PushModalAsync(new MainMenuView());
         }
