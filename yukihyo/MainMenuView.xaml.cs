@@ -44,7 +44,7 @@ namespace yukihyo
 
         async void ManualTapped(System.Object sender, System.EventArgs e)
         {
-            await Navigation.PushModalAsync(new ManualView(), false);
+            await Navigation.PushModalAsync(new CareGuideView(), false);
         }
 
         async void RenameTapped(System.Object sender, System.EventArgs e)

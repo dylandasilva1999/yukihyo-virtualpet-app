@@ -29,6 +29,9 @@
     <Compile Update="MainMenuView.xaml.cs">
       <DependentUpon>MainMenuView.xaml</DependentUpon>
     </Compile>
+    <Compile Update="CareGuideView.xaml.cs">
+      <DependentUpon>CareGuideView.xaml</DependentUpon>
+    </Compile>
     <Compile Update="WelcomeView.xaml.cs">
       <DependentUpon>WelcomeView.xaml</DependentUpon>
     </Compile>
@@ -47,7 +50,7 @@
     <EmbeddedResource Update="MainMenuView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="ManualView.xaml">
+    <EmbeddedResource Update="CareGuideView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="RenameView.xaml">
