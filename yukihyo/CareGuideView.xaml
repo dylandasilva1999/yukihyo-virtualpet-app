@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="yukihyo.CareGuideView"
+             xmlns:st="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions"
+             xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             BackgroundColor="#FFFFFF">
+    <ContentPage.Content>
+
+        <ScrollView>
+
+            <RelativeLayout x:Name="Container">
+                <pancake:PancakeView
+                    CornerRadius="13"
+                    HeightRequest="50"
+                    WidthRequest="50"
+                    BackgroundColor="#F37722"
+                    RelativeLayout.XConstraint=
+                    "{ConstraintExpression 
+                       Type=RelativeToParent,
+                       Property=Width, 
+                       Factor=0,
+                       Constant=30}"
+                    RelativeLayout.YConstraint=
+                    "{ConstraintExpression 
+                       Type=RelativeToParent,
+                       Property=Height,
+                       Factor=0,
+                       Constant=20}">
+                    <pancake:PancakeView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TappedOnMenu"/>
+                    </pancake:PancakeView.GestureRecognizers>
+                    <RelativeLayout>
+                        <Image
+                        Source="menu_icon"
+                        WidthRequest="25"
+                        HeightRequest="25"
+                        TranslationX="12"
+                        TranslationY="12">
+                        </Image>
+                    </RelativeLayout>
+                </pancake:PancakeView>
+                <StackLayout Margin="0,20,0,0" Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"
+                         RelativeLayout.WidthConstraint=
+                            "{ConstraintExpression Type=RelativeToParent,
+                            Property=Width,
+                            Factor=1}"
+                         RelativeLayout.HeightConstraint=
+                            "{ConstraintExpression Type=RelativeToParent,
+                            Property=Height,
+                            Factor=1}">
+                    <StackLayout.TranslationY>
+                        <OnPlatform
+                        x:TypeArguments="x:Double"
+                        iOS="70"
+                        Android="70" />
+                    </StackLayout.TranslationY>
+                    <Label
+                    x:Name="CareGuideText"
+                    Text="Care Guide"
+                    Style="{StaticResource StylisedHeader}"
+                    HorizontalOptions="Center" 
+                    HorizontalTextAlignment="Center" 
+                />
+                    <Label
+                    x:Name="SubCareGuideText"
+                    Text="Swipe left to learn more"
+                    Style="{StaticResource RegularBodyBlack}"
+                    HorizontalOptions="Center" 
+                    HorizontalTextAlignment="Center"
+                    Margin="0,-5,0,0"
+                />
+
+                    <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal">
+                        <StackLayout Orientation="Horizontal">
+
+                            <pancake:PancakeView
+                                CornerRadius="25"
+                                Margin="40,0,10,20" 
+                                TranslationY="20">
+                                <Grid
+                                    HeightRequest="430"
+                                    WidthRequest="300"
+                                    BackgroundColor="#2B657A">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="80"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <StackLayout Padding="40,10,40,0">
+                                        <Label
+                                            Grid.Row="0"
+                                            x:Name="MarmotTitleText"
+                                            Text="Marmots"
+                                            Style="{StaticResource ManualHeader}"
+                                            HorizontalOptions="Start" 
+                                            Margin="0,30,0,0"
+                                        />
+                                        <Label
+                                            Grid.Row="1"
+                                            x:Name="MarmotInfoText"
+                                            Text="This the snow leopard's favourite snack to eat. Marmots are considered large ground squirrels from the genus of marmots."
+                                            Style="{StaticResource RegularBodyWhite}"
+                                            HorizontalOptions="Start" 
+                                            Margin="0,10,0,0"
+                                            LineHeight="1.2"
+                                        />
+                                        <Image Grid.Row="1"
+                                           Source="marmot_image"
+                                           HeightRequest="160"
+                                           WidthRequest="160"
+                                           HorizontalOptions="Center">
+                                            <Image.TranslationY>
+                                                <OnPlatform
+                                                   x:TypeArguments="x:Double"
+                                                   iOS="20"
+                                                   Android="20" />
+                                            </Image.TranslationY>
+                                        </Image>
+                                    </StackLayout>
+                                </Grid>
+                            </pancake:PancakeView>
+                            <pancake:PancakeView
+                                CornerRadius="25"
+                                Margin="20,0,10,20" 
+                                TranslationY="20">
+                                <Grid
+                                    HeightRequest="430"
+                                    WidthRequest="300"
+                                    BackgroundColor="#2B657A">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="80"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <StackLayout Padding="40,10,40,0">
+                                        <Label
+                                            Grid.Row="0"
+                                            x:Name="HabitatTitleText"
+                                            Text="Habitat"
+                                            Style="{StaticResource ManualHeader}"
+                                            HorizontalOptions="Start" 
+                                            Margin="0,30,0,0"
+                                        />
+                                        <Label
+                                            Grid.Row="1"
+                                            x:Name="HabitatInfoText"
+                                            Text="Their habitat is threatened by climate change and deforestation. Therefore changing the temperature and planting trees is featured."
+                                            Style="{StaticResource RegularBodyWhite}"
+                                            HorizontalOptions="Start" 
+                                            Margin="0,10,0,0"
+                                            LineHeight="1.2"
+                                        />
+                                        <Image Grid.Row="1"
+                                           Source="habitat_image"
+                                           HeightRequest="140"
+                                           WidthRequest="140"
+                                           HorizontalOptions="Center">
+                                            <Image.TranslationY>
+                                                <OnPlatform
+                                                   x:TypeArguments="x:Double"
+                                                   iOS="20"
+                                                   Android="20" />
+                                            </Image.TranslationY>
+                                        </Image>
+                                    </StackLayout>
+                                </Grid>
+                            </pancake:PancakeView>
+                            <pancake:PancakeView
+                                CornerRadius="25"
+                                Margin="20,0,10,20" 
+                                TranslationY="20">
+                                <Grid
+                                    HeightRequest="430"
+                                    WidthRequest="300"
+                                    BackgroundColor="#2B657A">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="80"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <StackLayout Padding="40,10,40,0">
+                                        <Label
+                                            Grid.Row="0"
+                                            x:Name="PoacherTitleText"
+                                            Text="Poachers"
+                                            Style="{StaticResource ManualHeader}"
+                                            HorizontalOptions="Start" 
+                                            Margin="0,30,0,0"
+                                        />
+                                        <Label
+                                            Grid.Row="1"
+                                            x:Name="PoacherInfoText"
+                                            Text="Poachers and herders are some of the largest threats to the Snow Leopard. Therefore the catching poachers interaction is implemented."
+                                            Style="{StaticResource RegularBodyWhite}"
+                                            HorizontalOptions="Start" 
+                                            Margin="0,10,0,0"
+                                            LineHeight="1.2"
+                                        />
+                                        <Image Grid.Row="1"
+                                           Source="poacher_image"
+                                           HeightRequest="120"
+                                           WidthRequest="120"
+                                           HorizontalOptions="Center">
+                                            <Image.TranslationY>
+                                                <OnPlatform
+                                                   x:TypeArguments="x:Double"
+                                                   iOS="20"
+                                                   Android="20" />
+                                            </Image.TranslationY>
+                                        </Image>
+                                    </StackLayout>
+                                </Grid>
+                            </pancake:PancakeView>
+
+                        </StackLayout>
+                    </ScrollView>
+
+                </StackLayout>
+                
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace yukihyo
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ManualView : ContentPage
+    public partial class CareGuideView : ContentPage
     {
-        public ManualView()
+        public CareGuideView()
         {
             InitializeComponent();
         }

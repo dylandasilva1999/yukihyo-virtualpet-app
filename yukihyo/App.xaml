@@ -86,6 +86,13 @@
             <Setter Property="TextColor" Value="#FFFFFF"></Setter>
         </Style>
 
+        <!-- Manual Text Style -->
+        <Style x:Key="ManualText" TargetType="Label">
+            <Setter Property="FontFamily" Value="{StaticResource ThinHeaderFont}"></Setter>
+            <Setter Property="FontSize" Value="20"></Setter>
+            <Setter Property="TextColor" Value="#FFFFFF"></Setter>
+        </Style>
+
         <!-- Stats Header Style -->
         <Style x:Key="StatsHeader" TargetType="Label">
             <Setter Property="FontFamily" Value="{StaticResource RegularBodyFont}"></Setter>
