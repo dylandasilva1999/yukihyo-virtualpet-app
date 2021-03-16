@@ -20,7 +20,7 @@ namespace yukihyo
         /*Navigation*/
         async void TappedOnMenu(System.Object sender, System.EventArgs e)
         {
-            await Navigation.PushModalAsync(new MainMenuView());
+            await Navigation.PushModalAsync(new MainMenuView(), false);
         }
     }
 }

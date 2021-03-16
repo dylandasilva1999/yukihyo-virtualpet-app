@@ -3,17 +3,188 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="yukihyo.MainMenuView"
              xmlns:st="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions"
-             BackgroundColor="#2B657A">
+             BackgroundColor="#F37722">
     <ContentPage.Content>
 
-        <RelativeLayout>
-            <Label
-                    Text="Gorgeous"
-                    Style="{StaticResource StylisedHeader}"
-                    HorizontalOptions="Center" 
-                    HorizontalTextAlignment="Center" 
-            />
-        </RelativeLayout>
+        <ScrollView>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1.5*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Grid.Row="0" Grid.ColumnSpan="2" Margin="80,60,80,0">
+                    <Frame BackgroundColor="#FFFFFF" Padding="5" HeightRequest="50" CornerRadius="50">
+                        <Label 
+                        Style="{StaticResource StylisedHeader}"
+                        TextColor="#F37722" 
+                        Text="Yukihyo" 
+                        Padding="3"
+                        HorizontalTextAlignment="Center">
+                        </Label>
+                    </Frame>
+                </StackLayout>
+
+                <!--Home Link-->
+                <ImageButton
+                BackgroundColor="Transparent"
+                VerticalOptions="Start"
+                Grid.Row="1"
+                Grid.Column="0"
+                Source="home_icon"
+                WidthRequest="40"
+                HeightRequest="40"
+                Margin="20,0,0,0"
+                Clicked="HomeTapped">
+                </ImageButton>
+                <Label
+                TranslationY="60"
+                Grid.Row="1" 
+                Grid.Column="0"
+                Style="{StaticResource RegularBodyWhite}"
+                Text="Home"
+                HorizontalTextAlignment="Center"
+                Margin="20,0,0,0">
+                </Label>
+
+                <!--Habitat Link-->
+                <ImageButton
+                BackgroundColor="Transparent"
+                TranslationY="-5"
+                VerticalOptions="Start"
+                Grid.Row="1"
+                Grid.Column="1"
+                Source="habitat_icon"
+                WidthRequest="60"
+                HeightRequest="60"
+                Margin="-25,0,0,0"
+                Clicked="HabitatTapped">
+                </ImageButton>
+                <Label
+                TranslationY="60"
+                Grid.Row="1" 
+                Grid.Column="1"
+                Style="{StaticResource RegularBodyWhite}"
+                Text="Habitat"
+                HorizontalTextAlignment="Center"
+                Margin="-25,0,0,0">
+                </Label>
+
+                <!--Feed Link-->
+                <ImageButton
+                BackgroundColor="Transparent"
+                TranslationY="-10"
+                VerticalOptions="Start"
+                Grid.Row="2"
+                Grid.Column="0"
+                Source="hunger_icon"
+                WidthRequest="80"
+                HeightRequest="80"
+                Margin="20,0,0,0"
+                Clicked="FeedTapped">
+                </ImageButton>
+                <Label
+                TranslationY="60"
+                Grid.Row="2" 
+                Grid.Column="0"
+                Style="{StaticResource RegularBodyWhite}"
+                Text="Feed"
+                HorizontalTextAlignment="Center"
+                Margin="15,0,0,0">
+                </Label>
+
+                <!--Safety Link-->
+                <ImageButton
+                BackgroundColor="Transparent"
+                TranslationY="-5"
+                VerticalOptions="Start"
+                Grid.Row="2"
+                Grid.Column="1"
+                Source="safety_icon"
+                WidthRequest="60"
+                HeightRequest="60"
+                Margin="-25,0,0,0"
+                Clicked="SafetyTapped">
+                </ImageButton>
+                <Label
+                TranslationY="60"
+                Grid.Row="2" 
+                Grid.Column="1"
+                Style="{StaticResource RegularBodyWhite}"
+                Text="Safety"
+                HorizontalTextAlignment="Center"
+                Margin="-25,0,0,0">
+                </Label>
+
+                <!--Manual Link-->
+                <ImageButton
+                BackgroundColor="Transparent"
+                TranslationY="10"
+                VerticalOptions="Start"
+                Grid.Row="3"
+                Grid.Column="0"
+                Source="manual_icon"
+                WidthRequest="50"
+                HeightRequest="50"
+                Margin="20,0,0,0"
+                Clicked="ManualTapped">
+                </ImageButton>
+                <Label
+                TranslationY="70"
+                Grid.Row="3" 
+                Grid.Column="0"
+                Style="{StaticResource RegularBodyWhite}"
+                Text="Manual"
+                HorizontalTextAlignment="Center"
+                Margin="15,0,0,0">
+                </Label>
+
+                <!--Rename Link-->
+                <ImageButton
+                BackgroundColor="Transparent"
+                TranslationY="8"
+                VerticalOptions="Start"
+                Grid.Row="3"
+                Grid.Column="1"
+                Source="rename_icon"
+                WidthRequest="55"
+                HeightRequest="55"
+                Margin="-25,0,0,0"
+                Clicked="RenameTapped">
+                </ImageButton>
+                <Label
+                TranslationY="70"
+                Grid.Row="3" 
+                Grid.Column="1"
+                Style="{StaticResource RegularBodyWhite}"
+                Text="Rename"
+                HorizontalTextAlignment="Center"
+                Margin="-25,0,0,0">
+                </Label>
+
+                <ImageButton
+                BackgroundColor="Transparent"
+                TranslationY="0"
+                VerticalOptions="Center"
+                Grid.Row="4"
+                Grid.ColumnSpan="2"
+                Source="exit_icon"
+                WidthRequest="30"
+                HeightRequest="30"
+                Clicked="ExitMenuTapped">
+                </ImageButton>
+
+            </Grid>
+
+        </ScrollView>
         
     </ContentPage.Content>
 </ContentPage>

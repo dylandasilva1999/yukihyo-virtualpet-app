@@ -1,6 +1,8 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Plugin.SharedTransitions;
+
 
 namespace yukihyo
 {
@@ -9,7 +11,7 @@ namespace yukihyo
 		public App()
 		{
 			InitializeComponent();
-			MainPage = new MainPage();
+			MainPage = new SharedTransitionNavigationPage(new MainPage());
 		}
 
 		protected override void OnStart()

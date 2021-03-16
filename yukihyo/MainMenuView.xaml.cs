@@ -16,5 +16,42 @@ namespace yukihyo
         {
             InitializeComponent();
         }
+
+        async void ExitMenuTapped(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PopModalAsync();
+        }
+
+        async void HomeTapped(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PopModalAsync();
+        }
+
+        async void HabitatTapped(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushModalAsync(new TemperatureView(), false);
+        }
+
+        async void FeedTapped(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushModalAsync(new FeedView(), false);
+        }
+
+        async void SafetyTapped(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushModalAsync(new SafetyView(), false);
+        }
+
+        async void ManualTapped(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushModalAsync(new ManualView(), false);
+        }
+
+        async void RenameTapped(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushModalAsync(new RenameView(), false);
+        }
+
+
     }
 }

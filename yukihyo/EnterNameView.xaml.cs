@@ -20,7 +20,7 @@ namespace yukihyo
         /* Navigation */
         async void Start(System.Object sender, System.EventArgs e)
         {
-            await Navigation.PushModalAsync(new HomeView());
+            await Navigation.PushModalAsync(new HomeView(), false);
         }
     }
 }

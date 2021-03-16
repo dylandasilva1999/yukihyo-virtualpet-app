@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="yukihyo.HomeView"
+             xmlns:st="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions"
              xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
              BackgroundColor="#FFFFFF">
     <ContentPage.Content>
@@ -30,10 +31,10 @@
                 <RelativeLayout>
                     <Image
                         Source="menu_icon"
-                        WidthRequest="28"
-                        HeightRequest="30"
-                        TranslationX="10"
-                        TranslationY="10">
+                        WidthRequest="25"
+                        HeightRequest="25"
+                        TranslationX="12"
+                        TranslationY="12">
                     </Image>
                 </RelativeLayout>
             </pancake:PancakeView>
@@ -97,8 +98,8 @@
                 <Image
                     x:Name="yukihyoImage"
                     Source="sad_yukihyo"
-                    WidthRequest="280"
-                    HeightRequest="280">
+                    WidthRequest="250"
+                    HeightRequest="250">
                     <Image.TranslationY>
                         <OnPlatform
                            x:TypeArguments="x:Double"
