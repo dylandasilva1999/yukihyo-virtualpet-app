@@ -42,7 +42,8 @@
                     </Label>
                 </StackLayout>
                 <StackLayout Grid.Row="2" Padding="0" Margin="5,20,0,0" HorizontalOptions="Center">
-                    <Entry 
+                    <Entry
+                    x:Name="yukihyoNameInput"
                     Placeholder="Enter new name here" 
                     PlaceholderColor="#BBBBBB" 
                     BackgroundColor="#FFFFFF"

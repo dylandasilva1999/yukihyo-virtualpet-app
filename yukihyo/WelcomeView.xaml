@@ -29,8 +29,8 @@
                 </BoxView.HeightRequest>
             </BoxView>
             <Image Grid.Row="2"
-                WidthRequest="250"
-                HeightRequest="250"
+                WidthRequest="270"
+                HeightRequest="270"
                 Source="landing_screen"
                 x:Name="landingImage"
                 VerticalOptions="Start">
@@ -41,7 +41,7 @@
                   Android="-120" />
                 </Image.TranslationY>
             </Image>
-            <StackLayout Grid.Row="2" Padding="48" Margin="0,-50,0,0">
+            <StackLayout Grid.Row="2" Padding="48" Margin="0,-30,0,0">
                 <StackLayout.TranslationY>
                     <OnPlatform
                      x:TypeArguments="x:Double"

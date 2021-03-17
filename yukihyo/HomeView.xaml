@@ -81,7 +81,7 @@
                         Android="70" />
                 </StackLayout.TranslationY>
                 <Label
-                    x:Name="YukihyoName"
+                    x:Name="yukihyoNameLabel"
                     Text="Gorgeous"
                     Style="{StaticResource StylisedHeader}"
                     HorizontalOptions="Center" 
@@ -98,8 +98,8 @@
                 <Image
                     x:Name="yukihyoImage"
                     Source="sad_yukihyo"
-                    WidthRequest="250"
-                    HeightRequest="250">
+                    WidthRequest="290"
+                    HeightRequest="290">
                     <Image.TranslationY>
                         <OnPlatform
                            x:TypeArguments="x:Double"

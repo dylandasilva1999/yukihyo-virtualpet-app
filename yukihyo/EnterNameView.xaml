@@ -6,7 +6,7 @@
              BackgroundColor="#F37722">
     <ContentPage.Content>
 
-        <Grid>
+        <Grid x:Name="enterNameLayout">
             <Grid.RowDefinitions>
                 <RowDefinition Height="320"/>
                 <RowDefinition Height="*"/>
@@ -22,16 +22,16 @@
                 <Image.TranslationY>
                     <OnPlatform
                        x:TypeArguments="x:Double"
-                       iOS="30"
-                       Android="30" />
+                       iOS="50"
+                       Android="50" />
                 </Image.TranslationY>
             </Image>
             <StackLayout Grid.Row="1" Padding="50" Margin="10,0,0,0" HorizontalOptions="Center">
                 <StackLayout.TranslationY>
                     <OnPlatform
                         x:TypeArguments="x:Double"
-                        iOS="-60"
-                        Android="-60" />
+                        iOS="-40"
+                        Android="-40" />
                 </StackLayout.TranslationY>
                 <Label Style="{StaticResource NameYukihyoHeader}"
                    Grid.Row="1"
@@ -50,7 +50,8 @@
                 </Label>
             </StackLayout>
             <StackLayout Grid.Row="2" Padding="50" Margin="5,0,0,0" HorizontalOptions="Center">
-                <Entry 
+                <Entry
+                    x:Name="yukihyoNameInput"
                     Placeholder="Enter name here" 
                     PlaceholderColor="#BBBBBB" 
                     BackgroundColor="#FFFFFF"
