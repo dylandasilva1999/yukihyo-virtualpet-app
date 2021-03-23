@@ -12,7 +12,7 @@ namespace yukihyo.Objects
     }
     public class YukihyoStates
     {
-        public static string GetTurtleString(YukihyoState yukihyoState)
+        public static string GetYukihyoString(YukihyoState yukihyoState)
         {
             switch (yukihyoState)
             {
@@ -27,7 +27,7 @@ namespace yukihyo.Objects
             }
         }
 
-        public static YukihyoState GetTurtleState(string yukihyoString)
+        public static YukihyoState GetYukihyoState(string yukihyoString)
         {
             switch (yukihyoString)
             {

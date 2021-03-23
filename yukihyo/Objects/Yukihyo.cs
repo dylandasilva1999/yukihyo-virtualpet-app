@@ -48,7 +48,7 @@ namespace yukihyo.Objects
             {
                 if (App.Current.Properties.ContainsKey(yukihyoStateKey))
                 {
-                    return YukihyoStates.GetTurtleState((string)App.Current.Properties[yukihyoStateKey]);
+                    return YukihyoStates.GetYukihyoState((string)App.Current.Properties[yukihyoStateKey]);
                 }
                 else
                 {
@@ -58,7 +58,7 @@ namespace yukihyo.Objects
 
             set
             {
-                App.Current.Properties[yukihyoStateKey] = YukihyoStates.GetTurtleString(value);
+                App.Current.Properties[yukihyoStateKey] = YukihyoStates.GetYukihyoString(value);
             }
         }
 
