@@ -107,6 +107,20 @@
             <Setter Property="TextColor" Value="#FFFFFF"></Setter>
         </Style>
 
+        <!-- Facts Header Style -->
+        <Style x:Key="FactsHeader" TargetType="Label">
+            <Setter Property="FontFamily" Value="{StaticResource SemiboldBodyFont}"></Setter>
+            <Setter Property="FontSize" Value="22"></Setter>
+            <Setter Property="TextColor" Value="#F37722"></Setter>
+        </Style>
+
+        <!-- Facts Regular Style -->
+        <Style x:Key="FactsRegular" TargetType="Label">
+            <Setter Property="FontFamily" Value="{StaticResource RegularBodyFont}"></Setter>
+            <Setter Property="FontSize" Value="20"></Setter>
+            <Setter Property="TextColor" Value="#F37722"></Setter>
+        </Style>
+
         <!-- Input Name Text Style -->
         <Style x:Key="InputNameText" TargetType="Label">
             <Setter Property="FontFamily" Value="{StaticResource RegularBodyFont}"></Setter>

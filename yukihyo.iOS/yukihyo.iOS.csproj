@@ -86,6 +86,7 @@
     <BundleResource Include="Resources\proxima_nova_regular.otf" />
     <BundleResource Include="Resources\proxima_nova_semibold.otf" />
     <BundleResource Include="Resources\proxima_nova_thin.otf" />
+    <BundleResource Include="Resources\love.json" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -543,5 +544,8 @@
     <ImageAsset Include="Assets.xcassets\enter_name_imageset\Iconwatch.png">
       <Visible>false</Visible>
     </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Effects\" />
   </ItemGroup>
 </Project>

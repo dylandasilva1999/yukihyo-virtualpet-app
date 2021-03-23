@@ -4,6 +4,7 @@
              x:Class="yukihyo.AttentionView"
              xmlns:st="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions"
              xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
              BackgroundColor="#2B657A">
     <ContentPage.Content>
 
@@ -28,11 +29,11 @@
                        Factor=0,
                        Constant=20}">
                     <pancake:PancakeView.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TappedOnMenu"/>
+                        <TapGestureRecognizer Tapped="TappedOnBack"/>
                     </pancake:PancakeView.GestureRecognizers>
                     <RelativeLayout>
                         <Image
-                        Source="menu_icon"
+                        Source="back_icon"
                         WidthRequest="25"
                         HeightRequest="25"
                         TranslationX="12"
@@ -64,24 +65,77 @@
                 />
                     <Label
                     x:Name="SubAttentionText"
-                    Text="Tap, hold and rub"
+                    Text="Tap, then hold and rub"
                     Style="{StaticResource RegularBodyWhite}"
                     HorizontalOptions="Center" 
                     HorizontalTextAlignment="Center"
                     Margin="0,-5,0,0"
                 />
+                    <forms:AnimationView 
+			            x:Name="animationView" 
+			            Grid.Row="1"
+			            Animation="love.json" 
+			            Loop="True"
+			            AutoPlay="False"
+                        WidthRequest="180"
+                        HeightRequest="180"
+                        Margin="0,10,0,0"
+                        IsPlaying="False"
+                    />
                     <Image
                     x:Name="yukihyoImage"
                     Source="sad_yukihyo"
                     WidthRequest="340"
                     HeightRequest="340">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Tapped="GiveLove" />
+                        </Image.GestureRecognizers>
                         <Image.TranslationY>
                             <OnPlatform
                            x:TypeArguments="x:Double"
-                           iOS="0"
-                           Android="0" />
+                           iOS="-180"
+                           Android="-180" />
                         </Image.TranslationY>
                     </Image>
+                    <StackLayout WidthRequest="300">
+                        <pancake:PancakeView
+                            CornerRadius="22"
+                            HeightRequest="160"
+                            WidthRequest="50"
+                            Margin="40,-90,40,0"
+                            BackgroundColor="#FFFFFF"
+                            TranslationY="-120">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label
+                                Grid.Row="0"
+                                Grid.ColumnSpan="1"
+                                x:Name="interestingFactText"
+                                Text="Interesting Fact"
+                                Style="{StaticResource FactsHeader}"
+                                HorizontalOptions="Center" 
+                                Margin="0,25,0,0"
+                            />
+                                <Label
+                                Grid.Row="1"
+                                Grid.ColumnSpan="1"
+                                x:Name="factText"
+                                Text="Snow Leopards rub their fur on rocks to mark their territory."
+                                Style="{StaticResource FactsRegular}"
+                                HorizontalOptions="Center"
+                                Margin="40,10,40,0"
+                                HorizontalTextAlignment="Center"
+                            />
+                            </Grid>
+                        </pancake:PancakeView>
+                    </StackLayout>
                 </StackLayout>
             </RelativeLayout>
             

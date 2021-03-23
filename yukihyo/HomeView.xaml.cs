@@ -29,12 +29,13 @@ namespace yukihyo
         /*Update UI Name*/
         void updateUI()
         {
+
             Device.BeginInvokeOnMainThread(async () =>
             {
                 if (yukihyoNameLabel.Text != yukihyo.YukihyoName)
                 {
                     yukihyoNameLabel.Text = yukihyo.YukihyoName;
-                }
+                } 
             });
         }
     }
