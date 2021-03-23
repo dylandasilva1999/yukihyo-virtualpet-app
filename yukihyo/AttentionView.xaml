@@ -65,7 +65,7 @@
                 />
                     <Label
                     x:Name="SubAttentionText"
-                    Text="Tap, then hold and rub"
+                    Text="Wake up and give belly rubs!"
                     Style="{StaticResource RegularBodyWhite}"
                     HorizontalOptions="Center" 
                     HorizontalTextAlignment="Center"
@@ -79,14 +79,14 @@
 			            AutoPlay="False"
                         WidthRequest="180"
                         HeightRequest="180"
-                        Margin="0,10,0,0"
+                        Margin="0,-10,0,0"
                         IsPlaying="False"
                     />
                     <Image
                     x:Name="yukihyoImage"
-                    Source="sad_yukihyo"
-                    WidthRequest="340"
-                    HeightRequest="340">
+                    Source="sleeping_yukihyo"
+                    WidthRequest="320"
+                    HeightRequest="320">
                         <Image.GestureRecognizers>
                             <TapGestureRecognizer
                                 Tapped="GiveLove" />
@@ -94,8 +94,8 @@
                         <Image.TranslationY>
                             <OnPlatform
                            x:TypeArguments="x:Double"
-                           iOS="-180"
-                           Android="-180" />
+                           iOS="-170"
+                           Android="-170" />
                         </Image.TranslationY>
                     </Image>
                     <StackLayout WidthRequest="300">
@@ -103,7 +103,7 @@
                             CornerRadius="22"
                             HeightRequest="160"
                             WidthRequest="50"
-                            Margin="40,-90,40,0"
+                            Margin="40,-60,40,0"
                             BackgroundColor="#FFFFFF"
                             TranslationY="-120">
                             <Grid>

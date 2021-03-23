@@ -109,7 +109,7 @@
 
         <!-- Facts Header Style -->
         <Style x:Key="FactsHeader" TargetType="Label">
-            <Setter Property="FontFamily" Value="{StaticResource SemiboldBodyFont}"></Setter>
+            <Setter Property="FontFamily" Value="{StaticResource BoldHeaderFont}"></Setter>
             <Setter Property="FontSize" Value="22"></Setter>
             <Setter Property="TextColor" Value="#F37722"></Setter>
         </Style>

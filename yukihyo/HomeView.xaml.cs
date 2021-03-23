@@ -267,17 +267,17 @@ namespace yukihyo
             if (timeHungerElapsed.TotalSeconds < 20)
             {
                 newHungerState = HungerState.happy;
-                hungerProgressBar.ProgressTo(1, 700, Easing.SinIn);
+                hungerProgressBar.ProgressTo(1, 1000, Easing.Linear);
             }
             else if (timeHungerElapsed.TotalSeconds < 30)
             {
                 newHungerState = HungerState.neutral;
-                hungerProgressBar.ProgressTo(0.5, 700, Easing.SinIn);
+                hungerProgressBar.ProgressTo(0.5, 1000, Easing.Linear);
             }
             else if (timeHungerElapsed.TotalSeconds >= 40)
             {
                 newHungerState = HungerState.sad;
-                hungerProgressBar.ProgressTo(0.1, 700, Easing.SinIn);
+                hungerProgressBar.ProgressTo(0.1, 1000, Easing.Linear);
             }
 
             /* Update Hunger state */
@@ -299,17 +299,17 @@ namespace yukihyo
             if (timeHabitatElapsed.TotalSeconds < 20)
             {
                 newHabitatState = HabitatState.happy;
-                habitatProgressBar.ProgressTo(1, 700, Easing.SinIn);
+                habitatProgressBar.ProgressTo(1, 1000, Easing.Linear);
             }
             else if (timeHabitatElapsed.TotalSeconds < 30)
             {
                 newHabitatState = HabitatState.neutral;
-                habitatProgressBar.ProgressTo(0.5, 700, Easing.SinIn);
+                habitatProgressBar.ProgressTo(0.5, 1000, Easing.Linear);
             }
             else if (timeHabitatElapsed.TotalSeconds >= 40)
             {
                 newHabitatState = HabitatState.sad;
-                habitatProgressBar.ProgressTo(0.1, 700, Easing.SinIn);
+                habitatProgressBar.ProgressTo(0.1, 1000, Easing.Linear);
             }
 
             /* Update Habitat state */
@@ -331,17 +331,17 @@ namespace yukihyo
             if (timeSafetyElapsed.TotalSeconds < 20)
             {
                 newSafetyState = SafetyState.happy;
-                safetyProgressBar.ProgressTo(1, 700, Easing.SinIn);
+                safetyProgressBar.ProgressTo(1, 1000, Easing.Linear);
             }
             else if (timeSafetyElapsed.TotalSeconds < 30)
             {
                 newSafetyState = SafetyState.neutral;
-                safetyProgressBar.ProgressTo(0.5, 700, Easing.SinIn);
+                safetyProgressBar.ProgressTo(0.5, 1000, Easing.Linear);
             }
             else if (timeSafetyElapsed.TotalSeconds >= 40)
             {
                 newSafetyState = SafetyState.sad;
-                safetyProgressBar.ProgressTo(0.1, 700, Easing.SinIn);
+                safetyProgressBar.ProgressTo(0.1, 1000, Easing.Linear);
             }
 
             /* Update Safety state */

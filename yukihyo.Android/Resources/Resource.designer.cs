@@ -18901,34 +18901,37 @@ namespace yukihyo.Droid
 			public const int safety_icon = 2131165323;
 			
 			// aapt resource value: 0x7F07008C
-			public const int splash_logo = 2131165324;
+			public const int sleeping_yukihyo = 2131165324;
 			
 			// aapt resource value: 0x7F07008D
-			public const int splash_screen = 2131165325;
+			public const int splash_logo = 2131165325;
 			
 			// aapt resource value: 0x7F07008E
-			public const int temperature_icon = 2131165326;
+			public const int splash_screen = 2131165326;
 			
 			// aapt resource value: 0x7F07008F
-			public const int tooltip_frame_dark = 2131165327;
+			public const int temperature_icon = 2131165327;
 			
 			// aapt resource value: 0x7F070090
-			public const int tooltip_frame_light = 2131165328;
+			public const int tooltip_frame_dark = 2131165328;
 			
 			// aapt resource value: 0x7F070091
-			public const int tree_icon = 2131165329;
+			public const int tooltip_frame_light = 2131165329;
 			
 			// aapt resource value: 0x7F070092
-			public const int yukihyo_state_happy = 2131165330;
+			public const int tree_icon = 2131165330;
 			
 			// aapt resource value: 0x7F070093
-			public const int yukihyo_state_neutral = 2131165331;
+			public const int yukihyo_state_happy = 2131165331;
 			
 			// aapt resource value: 0x7F070094
-			public const int yukihyo_state_sad = 2131165332;
+			public const int yukihyo_state_neutral = 2131165332;
 			
 			// aapt resource value: 0x7F070095
-			public const int yukihyo_text = 2131165333;
+			public const int yukihyo_state_sad = 2131165333;
+			
+			// aapt resource value: 0x7F070096
+			public const int yukihyo_text = 2131165334;
 			
 			static Drawable()
 			{
@@ -19992,19 +19995,22 @@ namespace yukihyo.Droid
 			public const int safety_icon = 2131492892;
 			
 			// aapt resource value: 0x7F0C001D
-			public const int temperature_icon = 2131492893;
+			public const int sleeping_yukihyo = 2131492893;
 			
 			// aapt resource value: 0x7F0C001E
-			public const int tree_icon = 2131492894;
+			public const int temperature_icon = 2131492894;
 			
 			// aapt resource value: 0x7F0C001F
-			public const int yukihyo_state_happy = 2131492895;
+			public const int tree_icon = 2131492895;
 			
 			// aapt resource value: 0x7F0C0020
-			public const int yukihyo_state_neutral = 2131492896;
+			public const int yukihyo_state_happy = 2131492896;
 			
 			// aapt resource value: 0x7F0C0021
-			public const int yukihyo_state_sad = 2131492897;
+			public const int yukihyo_state_neutral = 2131492897;
+			
+			// aapt resource value: 0x7F0C0022
+			public const int yukihyo_state_sad = 2131492898;
 			
 			static Mipmap()
 			{

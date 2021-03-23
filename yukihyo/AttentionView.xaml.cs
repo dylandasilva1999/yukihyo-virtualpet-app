@@ -29,9 +29,9 @@ namespace yukihyo
 
             Image image = sender as Image;
             string source = image.Source as FileImageSource;  //Getting the name of source as string
-            if (String.Equals(source, "sad_yukihyo.png"))
+            if (String.Equals(source, "sleeping_yukihyo.png"))
             {
-                image.Source = "sad_yukihyo.png";
+                image.Source = "sleeping_yukihyo.png";
             }
             else
             {
