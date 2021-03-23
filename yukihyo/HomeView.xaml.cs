@@ -196,6 +196,7 @@ namespace yukihyo
         {
             timeKeeper.StartTime = DateTime.Now;
 
+            StartTimer();
         }
 
         /*Reset Hunger Timer*/
