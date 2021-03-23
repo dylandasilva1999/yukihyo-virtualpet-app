@@ -60,7 +60,7 @@
                     <Label 
                         WidthRequest="40"
                         Style="{StaticResource Age}"
-                        Text="5 Days" 
+                        Text="Level 1" 
                         HorizontalTextAlignment="Center">
                     </Label>
                 </Frame>
@@ -98,25 +98,24 @@
                 <Image
                     x:Name="yukihyoImage"
                     Source="sad_yukihyo"
-                    WidthRequest="290"
-                    HeightRequest="290">
+                    WidthRequest="300"
+                    HeightRequest="300">
                     <Image.TranslationY>
                         <OnPlatform
                            x:TypeArguments="x:Double"
-                           iOS="-30"
-                           Android="-30" />
+                           iOS="-10"
+                           Android="-10" />
                     </Image.TranslationY>
                 </Image>
                 <pancake:PancakeView
                     CornerRadius="12"
-                    HeightRequest="120"
+                    HeightRequest="68"
                     WidthRequest="50"
                     Margin="40,0,40,0"
                     BackgroundColor="#2B657A"
-                    TranslationY="-60">
+                    TranslationY="-20">
                     <Grid>
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="*"/>
                             <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
@@ -126,10 +125,10 @@
                         <Image
                             Grid.Row="0"
                             Grid.Column="0"
-                            x:Name="treeIcon"
-                            Source="tree_icon"
-                            WidthRequest="20"
-                            HeightRequest="20">
+                            x:Name="habitatIcon"
+                            Source="habitat_icon"
+                            WidthRequest="40"
+                            HeightRequest="40">
                             <Image.TranslationX>
                                 <OnPlatform
                                    x:TypeArguments="x:Double"
@@ -139,89 +138,31 @@
                             <Image.TranslationY>
                                 <OnPlatform
                                    x:TypeArguments="x:Double"
-                                   iOS="5"
-                                   Android="5" />
-                            </Image.TranslationY>
-                        </Image>
-                        <Label
-                            Grid.Row="0"
-                            Grid.Column="1"
-                            x:Name="treeStatsText"
-                            Text="Trees"
-                            Style="{StaticResource StatsHeader}"
-                            HorizontalOptions="Start" 
-                            Margin="35,20,0,0"
-                        />
-                        <ProgressBar
-                            Grid.Row="0"
-                            Grid.Column="1"
-                            x:Name="TreesProgressBar"
-                            Progress="0.3"
-                            ProgressColor="#F37722"
-                            Margin="35,35,0,0"
-                        />
-                        <Image
-                            Grid.Row="0"
-                            Grid.Column="1"
-                            x:Name="treeStateIcon"
-                            Source="sad_icon"
-                            WidthRequest="25"
-                            HeightRequest="25"
-                            HorizontalOptions="End" >
-                            <Image.TranslationX>
-                                <OnPlatform
-                                   x:TypeArguments="x:Double"
-                                   iOS="5"
-                                   Android="5" />
-                            </Image.TranslationX>
-                            <Image.TranslationY>
-                                <OnPlatform
-                                   x:TypeArguments="x:Double"
                                    iOS="0"
                                    Android="0" />
                             </Image.TranslationY>
                         </Image>
-                        <Image
-                            Grid.Row="1"
-                            Grid.Column="0"
-                            x:Name="temperatureIcon"
-                            Source="temperature_icon"
-                            WidthRequest="20"
-                            HeightRequest="20">
-                            <Image.TranslationX>
-                                <OnPlatform
-                                   x:TypeArguments="x:Double"
-                                   iOS="22"
-                                   Android="22" />
-                            </Image.TranslationX>
-                            <Image.TranslationY>
-                                <OnPlatform
-                                   x:TypeArguments="x:Double"
-                                   iOS="-8"
-                                   Android="-8" />
-                            </Image.TranslationY>
-                        </Image>
                         <Label
-                            Grid.Row="1"
+                            Grid.Row="0"
                             Grid.Column="1"
-                            x:Name="temperatureStatsText"
-                            Text="Temperature"
+                            x:Name="habitatStatsText"
+                            Text="Habitat"
                             Style="{StaticResource StatsHeader}"
                             HorizontalOptions="Start" 
-                            Margin="35,5,0,0"
+                            Margin="35,16,0,0"
                         />
                         <ProgressBar
-                            Grid.Row="1"
+                            Grid.Row="0"
                             Grid.Column="1"
-                            x:Name="TemperatureProgressBar"
+                            x:Name="HabitatProgressBar"
                             Progress="0.3"
                             ProgressColor="#F37722"
-                            Margin="35,8,0,0"
+                            Margin="35,22,0,0"
                         />
                         <Image
-                            Grid.Row="1"
+                            Grid.Row="0"
                             Grid.Column="1"
-                            x:Name="tempStateIcon"
+                            x:Name="habitatStateIcon"
                             Source="sad_icon"
                             WidthRequest="25"
                             HeightRequest="25"
@@ -235,8 +176,8 @@
                             <Image.TranslationY>
                                 <OnPlatform
                                    x:TypeArguments="x:Double"
-                                   iOS="-15"
-                                   Android="-15" />
+                                   iOS="-7"
+                                   Android="-7" />
                             </Image.TranslationY>
                         </Image>
                     </Grid>
@@ -247,7 +188,7 @@
                     WidthRequest="50"
                     Margin="40,0,40,0"
                     BackgroundColor="#2B657A"
-                    TranslationY="-50">
+                    TranslationY="-10">
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="*"/>
@@ -322,7 +263,7 @@
                     WidthRequest="50"
                     Margin="40,0,40,0"
                     BackgroundColor="#2B657A"
-                    TranslationY="-40">
+                    TranslationY="0">
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="*"/>
