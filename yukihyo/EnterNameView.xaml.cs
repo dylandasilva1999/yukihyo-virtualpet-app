@@ -24,7 +24,7 @@ namespace yukihyo
         async void Start(System.Object sender, System.EventArgs e)
         {
             yukihyo.YukihyoName = yukihyoNameInput.Text;
-            await Navigation.PushModalAsync(new HomeView(), true);
+            await Navigation.PushModalAsync(new HomeView(), false);
         }
 
         /*Animations On Load*/

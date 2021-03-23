@@ -18919,7 +18919,16 @@ namespace yukihyo.Droid
 			public const int tree_icon = 2131165329;
 			
 			// aapt resource value: 0x7F070092
-			public const int yukihyo_text = 2131165330;
+			public const int yukihyo_state_happy = 2131165330;
+			
+			// aapt resource value: 0x7F070093
+			public const int yukihyo_state_neutral = 2131165331;
+			
+			// aapt resource value: 0x7F070094
+			public const int yukihyo_state_sad = 2131165332;
+			
+			// aapt resource value: 0x7F070095
+			public const int yukihyo_text = 2131165333;
 			
 			static Drawable()
 			{
@@ -19987,6 +19996,15 @@ namespace yukihyo.Droid
 			
 			// aapt resource value: 0x7F0C001E
 			public const int tree_icon = 2131492894;
+			
+			// aapt resource value: 0x7F0C001F
+			public const int yukihyo_state_happy = 2131492895;
+			
+			// aapt resource value: 0x7F0C0020
+			public const int yukihyo_state_neutral = 2131492896;
+			
+			// aapt resource value: 0x7F0C0021
+			public const int yukihyo_state_sad = 2131492897;
 			
 			static Mipmap()
 			{

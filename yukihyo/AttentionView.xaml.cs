@@ -39,7 +39,6 @@ namespace yukihyo
                 await image.FadeTo(1, 50, Easing.CubicIn);
             }
 
-            
         }
     }
 }

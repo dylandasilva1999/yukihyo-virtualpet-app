@@ -10,6 +10,9 @@ namespace yukihyo
 	public partial class App : Application
 	{
 		private TimeKeeper timeKeeper = new TimeKeeper();
+		private TimeKeeperHunger timeKeeperHunger = new TimeKeeperHunger();
+		private TimeKeeperHabitat timeKeeperHabitat = new TimeKeeperHabitat();
+		private TimeKeeperSafety timeKeeperSafety = new TimeKeeperSafety();
 
 		public App()
 		{
@@ -30,6 +33,9 @@ namespace yukihyo
 			Console.WriteLine("OnSleep");
 
 			timeKeeper.StoredTime = DateTime.Now;
+			timeKeeperHunger.StoredTime = DateTime.Now;
+			timeKeeperHabitat.StoredTime = DateTime.Now;
+			timeKeeperSafety.StoredTime = DateTime.Now;
 		}
 
 		protected override void OnResume()

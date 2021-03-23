@@ -38,8 +38,8 @@
     <Compile Update="HabitatView.xaml.cs">
       <DependentUpon>HabitatView.xaml</DependentUpon>
     </Compile>
-    <Compile Update="WelcomeView.xaml.cs">
-      <DependentUpon>WelcomeView.xaml</DependentUpon>
+    <Compile Update="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
