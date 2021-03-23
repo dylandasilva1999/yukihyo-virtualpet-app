@@ -167,7 +167,7 @@
                             Grid.Row="0"
                             Grid.Column="1"
                             x:Name="habitatStateIcon"
-                            Source="sad_icon"
+                            Source="yukihyo_state_happy"
                             WidthRequest="25"
                             HeightRequest="25"
                             HorizontalOptions="End" >
@@ -323,7 +323,7 @@
                             Grid.Row="0"
                             Grid.Column="1"
                             x:Name="safetyStateIcon"
-                            Source="sad_icon"
+                            Source="yukihyo_state_happy"
                             WidthRequest="25"
                             HeightRequest="25"
                             HorizontalOptions="End" >
