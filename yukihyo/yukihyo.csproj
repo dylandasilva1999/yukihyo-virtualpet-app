@@ -32,6 +32,12 @@
     <Compile Update="CareGuideView.xaml.cs">
       <DependentUpon>CareGuideView.xaml</DependentUpon>
     </Compile>
+    <Compile Update="AttentionView.xaml.cs">
+      <DependentUpon>AttentionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="HabitatView.xaml.cs">
+      <DependentUpon>HabitatView.xaml</DependentUpon>
+    </Compile>
     <Compile Update="WelcomeView.xaml.cs">
       <DependentUpon>WelcomeView.xaml</DependentUpon>
     </Compile>
@@ -53,13 +59,16 @@
     <EmbeddedResource Update="CareGuideView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="HabitatView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="RenameView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="SafetyView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="TemperatureView.xaml">
+    <EmbeddedResource Update="AttentionView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="yukihyo.TemperatureView"
+             x:Class="yukihyo.AttentionView"
              xmlns:st="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions"
              xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
-             BackgroundColor="#FFFFFF">
+             BackgroundColor="#2B657A">
     <ContentPage.Content>
 
         <ScrollView>
@@ -40,33 +40,6 @@
                         </Image>
                     </RelativeLayout>
                 </pancake:PancakeView>
-                <RelativeLayout
-                RelativeLayout.XConstraint=
-                    "{ConstraintExpression 
-                       Type=RelativeToParent,
-                       Property=Width, 
-                       Factor=0.65,
-                       Constant=35}"
-                    RelativeLayout.YConstraint=
-                    "{ConstraintExpression 
-                       Type=RelativeToParent,
-                       Property=Height,
-                       Factor=0,
-                       Constant=35}">
-                    <Frame 
-                        BackgroundColor="#F37722" 
-                        Padding="5" 
-                        WidthRequest="60" 
-                        HeightRequest="16" 
-                        CornerRadius="40">
-                        <Label 
-                        WidthRequest="40"
-                        Style="{StaticResource Age}"
-                        Text="5 Days" 
-                        HorizontalTextAlignment="Center">
-                        </Label>
-                    </Frame>
-                </RelativeLayout>
                 <StackLayout Margin="0,20,0,0" Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"
                          RelativeLayout.WidthConstraint=
                             "{ConstraintExpression Type=RelativeToParent,
@@ -83,16 +56,16 @@
                         Android="70" />
                     </StackLayout.TranslationY>
                     <Label
-                    x:Name="TemperatureText"
-                    Text="Temperature"
-                    Style="{StaticResource StylisedHeader}"
+                    x:Name="AttentionText"
+                    Text="Attention"
+                    Style="{StaticResource StylisedWhiteHeader}"
                     HorizontalOptions="Center" 
                     HorizontalTextAlignment="Center" 
                 />
                     <Label
-                    x:Name="SubTemperatureText"
-                    Text="Change Temperature"
-                    Style="{StaticResource RegularBodyBlack}"
+                    x:Name="SubAttentionText"
+                    Text="Tap, hold and rub"
+                    Style="{StaticResource RegularBodyWhite}"
                     HorizontalOptions="Center" 
                     HorizontalTextAlignment="Center"
                     Margin="0,-5,0,0"
@@ -100,13 +73,13 @@
                     <Image
                     x:Name="yukihyoImage"
                     Source="sad_yukihyo"
-                    WidthRequest="250"
-                    HeightRequest="250">
+                    WidthRequest="340"
+                    HeightRequest="340">
                         <Image.TranslationY>
                             <OnPlatform
                            x:TypeArguments="x:Double"
-                           iOS="-20"
-                           Android="-20" />
+                           iOS="0"
+                           Android="0" />
                         </Image.TranslationY>
                     </Image>
                 </StackLayout>

@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace yukihyo
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class TemperatureView : ContentPage
+    public partial class HabitatView : ContentPage
     {
-        public TemperatureView()
+        public HabitatView()
         {
             InitializeComponent();
         }

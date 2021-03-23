@@ -58,6 +58,13 @@
             <Setter Property="TextColor" Value="#F37722"></Setter>
         </Style>
 
+        <!-- Stylised Header White Style -->
+        <Style x:Key="StylisedWhiteHeader" TargetType="Label">
+            <Setter Property="FontFamily" Value="{StaticResource StylisedHeaderFont}"></Setter>
+            <Setter Property="FontSize" Value="38"></Setter>
+            <Setter Property="TextColor" Value="#FFFFFF"></Setter>
+        </Style>
+
         <!-- Regular Body Black Style -->
         <Style x:Key="RegularBodyBlack" TargetType="Label">
             <Setter Property="FontFamily" Value="{StaticResource RegularBodyFont}"></Setter>

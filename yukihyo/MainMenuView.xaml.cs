@@ -29,7 +29,7 @@ namespace yukihyo
 
         async void HabitatTapped(System.Object sender, System.EventArgs e)
         {
-            await Navigation.PushModalAsync(new TemperatureView(), false);
+            await Navigation.PushModalAsync(new HabitatView(), false);
         }
 
         async void FeedTapped(System.Object sender, System.EventArgs e)
@@ -50,6 +50,11 @@ namespace yukihyo
         async void RenameTapped(System.Object sender, System.EventArgs e)
         {
             await Navigation.PushModalAsync(new RenameView(), false);
+        }
+
+        async void AttentionTapped(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushModalAsync(new AttentionView(), false);
         }
 
 
