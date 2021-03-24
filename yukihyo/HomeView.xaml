@@ -159,7 +159,7 @@
                             Grid.Row="0"
                             Grid.Column="1"
                             x:Name="habitatProgressBar"
-                            Progress="0.3"
+                            Progress="0.5"
                             ProgressColor="#F37722"
                             Margin="35,22,0,0"
                         />
@@ -237,7 +237,7 @@
                             Grid.Row="0"
                             Grid.Column="1"
                             x:Name="hungerProgressBar"
-                            Progress="0.3"
+                            Progress="0.5"
                             ProgressColor="#F37722"
                             Margin="35,22,0,0"
                         />
@@ -315,7 +315,7 @@
                             Grid.Row="0"
                             Grid.Column="1"
                             x:Name="safetyProgressBar"
-                            Progress="0.3"
+                            Progress="0.5"
                             ProgressColor="#F37722"
                             Margin="35,22,0,0"
                         />

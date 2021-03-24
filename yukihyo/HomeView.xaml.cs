@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.ComponentModel;
 using System.Timers;
 using yukihyo.Objects;
 using Xamarin.Forms;
@@ -12,9 +11,6 @@ using Xamarin.Forms.Xaml;
 namespace yukihyo
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    // Learn more about making custom code visible in the Xamarin.Forms previewer
-    // by visiting https://aka.ms/xamarinforms-previewer
-    [DesignTimeVisible(false)]
     public partial class HomeView : ContentPage
     {
 
@@ -238,6 +234,7 @@ namespace yukihyo
             if (timeElapsed.TotalSeconds < 20)
             {
                 newYukihyoState = YukihyoState.happy;
+                
             }
             else if (timeElapsed.TotalSeconds < 30)
             {
