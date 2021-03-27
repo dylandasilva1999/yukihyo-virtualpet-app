@@ -221,10 +221,16 @@ namespace yukihyo.Objects
             Xp = Xp + 300;
         }
 
-        /*Habitat Yukihyo*/
+        /*Safety Yukihyo*/
         public void catchPoacher()
         {
             Xp = Xp + 300;
+        }
+
+        /*Attention Yukihyo*/
+        public void giveAttention()
+        {
+            Xp = Xp + 200;
         }
     }
 }

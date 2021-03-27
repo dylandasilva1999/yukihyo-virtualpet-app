@@ -7,7 +7,7 @@ using Plugin.SharedTransitions;
 
 namespace yukihyo
 {
-	public partial class App : Application
+	public partial class App : Application 
 	{
 		private TimeKeeper timeKeeper = new TimeKeeper();
 		private TimeKeeperHunger timeKeeperHunger = new TimeKeeperHunger();

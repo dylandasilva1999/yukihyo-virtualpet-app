@@ -4,6 +4,7 @@
              x:Class="yukihyo.FeedView"
              xmlns:st="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions"
              xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
              BackgroundColor="#FFFFFF">
     <ContentPage.Content>
 
@@ -59,10 +60,11 @@
                         WidthRequest="60" 
                         HeightRequest="16" 
                         CornerRadius="40">
-                        <Label 
+                        <Label
+                        x:Name="xpLevel"
                         WidthRequest="40"
                         Style="{StaticResource Age}"
-                        Text="5 Days" 
+                        Text="Level 1" 
                         HorizontalTextAlignment="Center">
                         </Label>
                     </Frame>
@@ -90,7 +92,7 @@
                     HorizontalTextAlignment="Center" 
                 />
                     <Label
-                    x:Name="SubeedText"
+                    x:Name="SubFeedText"
                     Text="Feed Marmots"
                     Style="{StaticResource RegularBodyBlack}"
                     HorizontalOptions="Center" 
@@ -99,7 +101,7 @@
                 />
                     <Image
                     x:Name="yukihyoImage"
-                    Source="sad_yukihyo"
+                    Source="feed_screen_image"
                     WidthRequest="250"
                     HeightRequest="250">
                         <Image.TranslationY>
@@ -109,6 +111,152 @@
                            Android="-20" />
                         </Image.TranslationY>
                     </Image>
+                </StackLayout>
+                <StackLayout  Margin="40,40,40,40" Orientation="Vertical" VerticalOptions="End" HorizontalOptions="FillAndExpand"
+                         RelativeLayout.WidthConstraint=
+                            "{ConstraintExpression Type=RelativeToParent,
+                            Property=Width,
+                            Factor=1}"
+                         RelativeLayout.HeightConstraint=
+                            "{ConstraintExpression Type=RelativeToParent,
+                            Property=Height,
+                            Factor=1}">
+                    <pancake:PancakeView 
+                        HeightRequest="290"
+                        WidthRequest="400"
+                        BackgroundColor="#2B657A"
+                        CornerRadius="22, 22, 22, 22"
+                        VerticalOptions="End">
+                        <StackLayout HorizontalOptions="CenterAndExpand">
+                            <forms:AnimationView 
+			                    x:Name="doneAnimation" 
+			                    Animation="done_animation.json" 
+			                    Loop="False"
+			                    AutoPlay="False"
+                                WidthRequest="170"
+                                HeightRequest="170"
+                                Margin="0,20,0,0"
+                                IsPlaying="True"
+                                IsVisible="false"
+                            />
+                            <Button
+                                x:Name="buttonToHome"
+                                Style="{StaticResource ButtonOrange}"
+                                Text="Back to home"
+                                Margin="30,10,30,10"
+                                TextColor="#FFFFFF"
+                                Clicked="BackHome"
+                                IsVisible="false">
+                            </Button>
+                            <Grid Margin="0, 10, 0, 0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="85"></RowDefinition>
+                                    <RowDefinition Height="85"></RowDefinition>
+                                    <RowDefinition Height="85"></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="85"></ColumnDefinition>
+                                    <ColumnDefinition Width="85"></ColumnDefinition>
+                                    <ColumnDefinition Width="85"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <ImageButton 
+                                    Source="marmot_image"
+                                    x:Name="marmot1"
+                                    Rotation="30"
+                                    Clicked="marmot1Tapped"
+                                    Grid.Row="0"
+                                    Grid.Column="0"
+                                    IsVisible="true"
+                                    BackgroundColor="Transparent">
+                                </ImageButton>
+                                <ImageButton 
+                                    Source="marmot_image"
+                                    x:Name="marmot2"
+                                    Rotation="10"
+                                    Clicked="marmot2Tapped"
+                                    Grid.Row="0"
+                                    Grid.Column="1"
+                                    IsVisible="true"
+                                    Margin="0, 8, 0, 0"
+                                    BackgroundColor="Transparent">
+                                </ImageButton>
+                                <ImageButton 
+                                    Source="marmot_image"
+                                    x:Name="marmot3"
+                                    RotationY="180"
+                                    Rotation="10"
+                                    Clicked="marmot3Tapped"
+                                    Grid.Row="0"
+                                    Grid.Column="2"
+                                    IsVisible="true"
+                                    BackgroundColor="Transparent">
+                                </ImageButton>
+                                <ImageButton 
+                                    Source="marmot_image"
+                                    x:Name="marmot4"
+                                    Rotation="20"
+                                    Clicked="marmot4Tapped"
+                                    Grid.Row="1"
+                                    Grid.Column="0"
+                                    Padding="5, 0, 0, 0"
+                                    IsVisible="true"
+                                    BackgroundColor="Transparent">
+                                </ImageButton>
+                                <ImageButton 
+                                    Source="marmot_image"
+                                    x:Name="marmot5"
+                                    Rotation="10"
+                                    Clicked="marmot5Tapped"
+                                    Grid.Row="1"
+                                    Grid.Column="1"
+                                    IsVisible="true"
+                                    BackgroundColor="Transparent">
+                                </ImageButton>
+                                <ImageButton 
+                                    Source="marmot_image"
+                                    x:Name="marmot6"
+                                    Clicked="marmot6Tapped"
+                                    RotationY="180"
+                                    Rotation="-20"
+                                    Grid.Row="1"
+                                    Grid.Column="2"
+                                    IsVisible="true"
+                                    BackgroundColor="Transparent">
+                                </ImageButton>
+                                <ImageButton 
+                                    Source="marmot_image"
+                                    x:Name="marmot7"
+                                    Rotation="-40"
+                                    Clicked="marmot7Tapped"
+                                    Grid.Row="2"
+                                    Grid.Column="0"
+                                    IsVisible="true"
+                                    BackgroundColor="Transparent">
+                                </ImageButton>
+                                <ImageButton 
+                                    Source="marmot_image"
+                                    x:Name="marmot8"
+                                    Rotation="30"
+                                    Clicked="marmot8Tapped"
+                                    Grid.Row="2"
+                                    Grid.Column="1"
+                                    Padding="5, 0, 0, 0"
+                                    IsVisible="true"
+                                    BackgroundColor="Transparent">
+                                </ImageButton>
+                                <ImageButton 
+                                    Source="marmot_image"
+                                    x:Name="marmot9"
+                                    Clicked="marmot9Tapped"
+                                    Rotation="10"
+                                    Grid.Row="2"
+                                    Grid.Column="2"
+                                    IsVisible="true"
+                                    BackgroundColor="Transparent">
+                                </ImageButton>
+                            </Grid>
+                        </StackLayout>
+                    </pancake:PancakeView>
                 </StackLayout>
             </RelativeLayout>
             

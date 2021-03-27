@@ -1,12 +1,152 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="yukihyo.HabitatView">
+             x:Class="yukihyo.HabitatView"
+             xmlns:st="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions"
+             xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             BackgroundColor="#FFFFFF">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+
+        <ScrollView>
+
+            <RelativeLayout x:Name="Container">
+                <pancake:PancakeView
+                    CornerRadius="13"
+                    HeightRequest="50"
+                    WidthRequest="50"
+                    BackgroundColor="#F37722"
+                    RelativeLayout.XConstraint=
+                    "{ConstraintExpression 
+                       Type=RelativeToParent,
+                       Property=Width, 
+                       Factor=0,
+                       Constant=30}"
+                    RelativeLayout.YConstraint=
+                    "{ConstraintExpression 
+                       Type=RelativeToParent,
+                       Property=Height,
+                       Factor=0,
+                       Constant=20}">
+                    <pancake:PancakeView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TappedOnMenu"/>
+                    </pancake:PancakeView.GestureRecognizers>
+                    <RelativeLayout>
+                        <Image
+                        Source="menu_icon"
+                        WidthRequest="25"
+                        HeightRequest="25"
+                        TranslationX="12"
+                        TranslationY="12">
+                        </Image>
+                    </RelativeLayout>
+                </pancake:PancakeView>
+                <RelativeLayout
+                RelativeLayout.XConstraint=
+                    "{ConstraintExpression 
+                       Type=RelativeToParent,
+                       Property=Width, 
+                       Factor=0.65,
+                       Constant=35}"
+                    RelativeLayout.YConstraint=
+                    "{ConstraintExpression 
+                       Type=RelativeToParent,
+                       Property=Height,
+                       Factor=0,
+                       Constant=35}">
+                    <Frame 
+                        BackgroundColor="#F37722" 
+                        Padding="5" 
+                        WidthRequest="60" 
+                        HeightRequest="16" 
+                        CornerRadius="40">
+                        <Label
+                        x:Name="xpLevel"
+                        WidthRequest="40"
+                        Style="{StaticResource Age}"
+                        Text="Level 1" 
+                        HorizontalTextAlignment="Center">
+                        </Label>
+                    </Frame>
+                </RelativeLayout>
+                <StackLayout Margin="0,20,0,0" Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"
+                         RelativeLayout.WidthConstraint=
+                            "{ConstraintExpression Type=RelativeToParent,
+                            Property=Width,
+                            Factor=1}"
+                         RelativeLayout.HeightConstraint=
+                            "{ConstraintExpression Type=RelativeToParent,
+                            Property=Height,
+                            Factor=1}">
+                    <StackLayout.TranslationY>
+                        <OnPlatform
+                        x:TypeArguments="x:Double"
+                        iOS="70"
+                        Android="70" />
+                    </StackLayout.TranslationY>
+                    <Label
+                    x:Name="HabitatText"
+                    Text="Habitat"
+                    Style="{StaticResource StylisedHeader}"
+                    HorizontalOptions="Center" 
+                    HorizontalTextAlignment="Center" 
+                />
+                    <Label
+                    x:Name="SubHabitatText"
+                    Text="Change Temperature"
+                    Style="{StaticResource RegularBodyBlack}"
+                    HorizontalOptions="Center" 
+                    HorizontalTextAlignment="Center"
+                    Margin="0,-5,0,0"
+                />
+                    <Image
+                    x:Name="yukihyoImage"
+                    Source="habitat_screen_image"
+                    WidthRequest="250"
+                    HeightRequest="250"
+                    Margin="-20,0,0,0">
+                        <Image.TranslationY>
+                            <OnPlatform
+                           x:TypeArguments="x:Double"
+                           iOS="-20"
+                           Android="-20" />
+                        </Image.TranslationY>
+                    </Image>
+                </StackLayout>
+                <StackLayout  Margin="40,40,40,40" Orientation="Vertical" VerticalOptions="End" HorizontalOptions="FillAndExpand"
+                         RelativeLayout.WidthConstraint=
+                            "{ConstraintExpression Type=RelativeToParent,
+                            Property=Width,
+                            Factor=1}"
+                         RelativeLayout.HeightConstraint=
+                            "{ConstraintExpression Type=RelativeToParent,
+                            Property=Height,
+                            Factor=1}">
+                    <pancake:PancakeView 
+                        HeightRequest="290"
+                        WidthRequest="400"
+                        BackgroundColor="#2B657A"
+                        CornerRadius="22, 22, 22, 22"
+                        VerticalOptions="End">
+                        <StackLayout HorizontalOptions="CenterAndExpand">
+                            <Grid Margin="0, 10, 0, 0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="85"></RowDefinition>
+                                    <RowDefinition Height="85"></RowDefinition>
+                                    <RowDefinition Height="85"></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="85"></ColumnDefinition>
+                                    <ColumnDefinition Width="85"></ColumnDefinition>
+                                    <ColumnDefinition Width="85"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                               
+                            </Grid>
+                        </StackLayout>
+                    </pancake:PancakeView>
+                </StackLayout>
+            </RelativeLayout>
+
+        </ScrollView>
+
     </ContentPage.Content>
 </ContentPage>

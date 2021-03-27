@@ -57,7 +57,8 @@
                     BackgroundColor="#FFFFFF"
                     TextColor="#373737"
                     HeightRequest="50"
-                    Margin="0,10,0,0"/>
+                    Margin="0,10,0,0"
+                    MaxLength="10"/>
                 <Button
                         x:Name="buttonStart"
                         Grid.Row="2"
