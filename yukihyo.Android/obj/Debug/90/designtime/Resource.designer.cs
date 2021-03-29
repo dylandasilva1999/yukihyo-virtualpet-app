@@ -18799,151 +18799,163 @@ namespace yukihyo.Droid
 			public const int habitat_screen_image = 2131165283;
 			
 			// aapt resource value: 0x7F070064
-			public const int happy_icon = 2131165284;
+			public const int happy_feed_yukihyo = 2131165284;
 			
 			// aapt resource value: 0x7F070065
-			public const int happy_yukihyo = 2131165285;
+			public const int happy_habitat_yukihyo = 2131165285;
 			
 			// aapt resource value: 0x7F070066
-			public const int home_icon = 2131165286;
+			public const int happy_icon = 2131165286;
 			
 			// aapt resource value: 0x7F070067
-			public const int hunger_icon = 2131165287;
+			public const int happy_yukihyo = 2131165287;
 			
 			// aapt resource value: 0x7F070068
-			public const int ic_mtrl_chip_checked_black = 2131165288;
+			public const int home_icon = 2131165288;
 			
 			// aapt resource value: 0x7F070069
-			public const int ic_mtrl_chip_checked_circle = 2131165289;
+			public const int hunger_icon = 2131165289;
 			
 			// aapt resource value: 0x7F07006A
-			public const int ic_mtrl_chip_close_circle = 2131165290;
+			public const int ic_mtrl_chip_checked_black = 2131165290;
 			
 			// aapt resource value: 0x7F07006B
-			public const int landing_screen = 2131165291;
+			public const int ic_mtrl_chip_checked_circle = 2131165291;
 			
 			// aapt resource value: 0x7F07006C
-			public const int manual_icon = 2131165292;
+			public const int ic_mtrl_chip_close_circle = 2131165292;
 			
 			// aapt resource value: 0x7F07006D
-			public const int marmot_image = 2131165293;
+			public const int landing_screen = 2131165293;
 			
 			// aapt resource value: 0x7F07006E
-			public const int menu_icon = 2131165294;
+			public const int manual_icon = 2131165294;
 			
 			// aapt resource value: 0x7F07006F
-			public const int minus_icon = 2131165295;
+			public const int marmot_image = 2131165295;
 			
 			// aapt resource value: 0x7F070070
-			public const int mtrl_snackbar_background = 2131165296;
+			public const int menu_icon = 2131165296;
 			
 			// aapt resource value: 0x7F070071
-			public const int mtrl_tabs_default_indicator = 2131165297;
+			public const int minus_icon = 2131165297;
 			
 			// aapt resource value: 0x7F070072
-			public const int name_screen_image = 2131165298;
+			public const int mtrl_snackbar_background = 2131165298;
 			
 			// aapt resource value: 0x7F070073
-			public const int navigation_empty_icon = 2131165299;
+			public const int mtrl_tabs_default_indicator = 2131165299;
 			
 			// aapt resource value: 0x7F070074
-			public const int neutral_icon = 2131165300;
+			public const int name_screen_image = 2131165300;
 			
 			// aapt resource value: 0x7F070075
-			public const int neutral_yukihyo = 2131165301;
+			public const int navigation_empty_icon = 2131165301;
 			
 			// aapt resource value: 0x7F070076
-			public const int notification_action_background = 2131165302;
+			public const int neutral_icon = 2131165302;
 			
 			// aapt resource value: 0x7F070077
-			public const int notification_bg = 2131165303;
+			public const int neutral_yukihyo = 2131165303;
 			
 			// aapt resource value: 0x7F070078
-			public const int notification_bg_low = 2131165304;
+			public const int notification_action_background = 2131165304;
 			
 			// aapt resource value: 0x7F070079
-			public const int notification_bg_low_normal = 2131165305;
+			public const int notification_bg = 2131165305;
 			
 			// aapt resource value: 0x7F07007A
-			public const int notification_bg_low_pressed = 2131165306;
+			public const int notification_bg_low = 2131165306;
 			
 			// aapt resource value: 0x7F07007B
-			public const int notification_bg_normal = 2131165307;
+			public const int notification_bg_low_normal = 2131165307;
 			
 			// aapt resource value: 0x7F07007C
-			public const int notification_bg_normal_pressed = 2131165308;
+			public const int notification_bg_low_pressed = 2131165308;
 			
 			// aapt resource value: 0x7F07007D
-			public const int notification_icon_background = 2131165309;
+			public const int notification_bg_normal = 2131165309;
 			
 			// aapt resource value: 0x7F07007E
-			public const int notification_template_icon_bg = 2131165310;
+			public const int notification_bg_normal_pressed = 2131165310;
 			
 			// aapt resource value: 0x7F07007F
-			public const int notification_template_icon_low_bg = 2131165311;
+			public const int notification_icon_background = 2131165311;
 			
 			// aapt resource value: 0x7F070080
-			public const int notification_tile_bg = 2131165312;
+			public const int notification_template_icon_bg = 2131165312;
 			
 			// aapt resource value: 0x7F070081
-			public const int notify_panel_notification_icon_bg = 2131165313;
+			public const int notification_template_icon_low_bg = 2131165313;
 			
 			// aapt resource value: 0x7F070082
-			public const int plus_icon = 2131165314;
+			public const int notification_tile_bg = 2131165314;
 			
 			// aapt resource value: 0x7F070083
-			public const int poacher_image = 2131165315;
+			public const int notify_panel_notification_icon_bg = 2131165315;
 			
 			// aapt resource value: 0x7F070084
-			public const int rename_icon = 2131165316;
+			public const int plus_icon = 2131165316;
 			
 			// aapt resource value: 0x7F070085
-			public const int sad_icon = 2131165317;
+			public const int poacher_image = 2131165317;
 			
 			// aapt resource value: 0x7F070086
-			public const int sad_yukihyo = 2131165318;
+			public const int rename_icon = 2131165318;
 			
 			// aapt resource value: 0x7F070087
-			public const int safety_icon = 2131165319;
+			public const int sad_feed_yukihyo = 2131165319;
 			
 			// aapt resource value: 0x7F070088
-			public const int safety_screen_image = 2131165320;
+			public const int sad_habitat_yukihyo = 2131165320;
 			
 			// aapt resource value: 0x7F070089
-			public const int sleeping_yukihyo = 2131165321;
+			public const int sad_icon = 2131165321;
 			
 			// aapt resource value: 0x7F07008A
-			public const int snow_icon = 2131165322;
+			public const int sad_yukihyo = 2131165322;
 			
 			// aapt resource value: 0x7F07008B
-			public const int splash_logo = 2131165323;
+			public const int safety_icon = 2131165323;
 			
 			// aapt resource value: 0x7F07008C
-			public const int splash_screen = 2131165324;
+			public const int safety_screen_image = 2131165324;
 			
 			// aapt resource value: 0x7F07008D
-			public const int temperature_icon = 2131165325;
+			public const int sleeping_yukihyo = 2131165325;
 			
 			// aapt resource value: 0x7F07008E
-			public const int tooltip_frame_dark = 2131165326;
+			public const int snow_icon = 2131165326;
 			
 			// aapt resource value: 0x7F07008F
-			public const int tooltip_frame_light = 2131165327;
+			public const int splash_logo = 2131165327;
 			
 			// aapt resource value: 0x7F070090
-			public const int tree_icon = 2131165328;
+			public const int splash_screen = 2131165328;
 			
 			// aapt resource value: 0x7F070091
-			public const int yukihyo_state_happy = 2131165329;
+			public const int temperature_icon = 2131165329;
 			
 			// aapt resource value: 0x7F070092
-			public const int yukihyo_state_neutral = 2131165330;
+			public const int tooltip_frame_dark = 2131165330;
 			
 			// aapt resource value: 0x7F070093
-			public const int yukihyo_state_sad = 2131165331;
+			public const int tooltip_frame_light = 2131165331;
 			
 			// aapt resource value: 0x7F070094
-			public const int yukihyo_text = 2131165332;
+			public const int tree_icon = 2131165332;
+			
+			// aapt resource value: 0x7F070095
+			public const int yukihyo_state_happy = 2131165333;
+			
+			// aapt resource value: 0x7F070096
+			public const int yukihyo_state_neutral = 2131165334;
+			
+			// aapt resource value: 0x7F070097
+			public const int yukihyo_state_sad = 2131165335;
+			
+			// aapt resource value: 0x7F070098
+			public const int yukihyo_text = 2131165336;
 			
 			static Drawable()
 			{
@@ -19983,91 +19995,103 @@ namespace yukihyo.Droid
 			public const int habitat_screen_image = 2131492873;
 			
 			// aapt resource value: 0x7F0C000A
-			public const int happy_icon = 2131492874;
+			public const int happy_feed_yukihyo = 2131492874;
 			
 			// aapt resource value: 0x7F0C000B
-			public const int happy_yukihyo = 2131492875;
+			public const int happy_habitat_yukihyo = 2131492875;
 			
 			// aapt resource value: 0x7F0C000C
-			public const int home_icon = 2131492876;
+			public const int happy_icon = 2131492876;
 			
 			// aapt resource value: 0x7F0C000D
-			public const int hunger_icon = 2131492877;
-			
-			// aapt resource value: 0x7F0C000F
-			public const int icon = 2131492879;
-			
-			// aapt resource value: 0x7F0C0010
-			public const int icon_round = 2131492880;
+			public const int happy_yukihyo = 2131492877;
 			
 			// aapt resource value: 0x7F0C000E
-			public const int ic_launcher = 2131492878;
+			public const int home_icon = 2131492878;
+			
+			// aapt resource value: 0x7F0C000F
+			public const int hunger_icon = 2131492879;
 			
 			// aapt resource value: 0x7F0C0011
-			public const int landing_screen = 2131492881;
+			public const int icon = 2131492881;
 			
 			// aapt resource value: 0x7F0C0012
-			public const int launcher_foreground = 2131492882;
+			public const int icon_round = 2131492882;
+			
+			// aapt resource value: 0x7F0C0010
+			public const int ic_launcher = 2131492880;
 			
 			// aapt resource value: 0x7F0C0013
-			public const int logo_icon = 2131492883;
+			public const int landing_screen = 2131492883;
 			
 			// aapt resource value: 0x7F0C0014
-			public const int manual_icon = 2131492884;
+			public const int launcher_foreground = 2131492884;
 			
 			// aapt resource value: 0x7F0C0015
-			public const int marmot_image = 2131492885;
+			public const int logo_icon = 2131492885;
 			
 			// aapt resource value: 0x7F0C0016
-			public const int minus_icon = 2131492886;
+			public const int manual_icon = 2131492886;
 			
 			// aapt resource value: 0x7F0C0017
-			public const int neutral_icon = 2131492887;
+			public const int marmot_image = 2131492887;
 			
 			// aapt resource value: 0x7F0C0018
-			public const int neutral_yukihyo = 2131492888;
+			public const int minus_icon = 2131492888;
 			
 			// aapt resource value: 0x7F0C0019
-			public const int plus_icon = 2131492889;
+			public const int neutral_icon = 2131492889;
 			
 			// aapt resource value: 0x7F0C001A
-			public const int poacher_image = 2131492890;
+			public const int neutral_yukihyo = 2131492890;
 			
 			// aapt resource value: 0x7F0C001B
-			public const int rename_icon = 2131492891;
+			public const int plus_icon = 2131492891;
 			
 			// aapt resource value: 0x7F0C001C
-			public const int sad_icon = 2131492892;
+			public const int poacher_image = 2131492892;
 			
 			// aapt resource value: 0x7F0C001D
-			public const int sad_yukihyo = 2131492893;
+			public const int rename_icon = 2131492893;
 			
 			// aapt resource value: 0x7F0C001E
-			public const int safety_icon = 2131492894;
+			public const int sad_feed_yukihyo = 2131492894;
 			
 			// aapt resource value: 0x7F0C001F
-			public const int safety_screen_image = 2131492895;
+			public const int sad_habitat_yukihyo = 2131492895;
 			
 			// aapt resource value: 0x7F0C0020
-			public const int sleeping_yukihyo = 2131492896;
+			public const int sad_icon = 2131492896;
 			
 			// aapt resource value: 0x7F0C0021
-			public const int snow_icon = 2131492897;
+			public const int sad_yukihyo = 2131492897;
 			
 			// aapt resource value: 0x7F0C0022
-			public const int temperature_icon = 2131492898;
+			public const int safety_icon = 2131492898;
 			
 			// aapt resource value: 0x7F0C0023
-			public const int tree_icon = 2131492899;
+			public const int safety_screen_image = 2131492899;
 			
 			// aapt resource value: 0x7F0C0024
-			public const int yukihyo_state_happy = 2131492900;
+			public const int sleeping_yukihyo = 2131492900;
 			
 			// aapt resource value: 0x7F0C0025
-			public const int yukihyo_state_neutral = 2131492901;
+			public const int snow_icon = 2131492901;
 			
 			// aapt resource value: 0x7F0C0026
-			public const int yukihyo_state_sad = 2131492902;
+			public const int temperature_icon = 2131492902;
+			
+			// aapt resource value: 0x7F0C0027
+			public const int tree_icon = 2131492903;
+			
+			// aapt resource value: 0x7F0C0028
+			public const int yukihyo_state_happy = 2131492904;
+			
+			// aapt resource value: 0x7F0C0029
+			public const int yukihyo_state_neutral = 2131492905;
+			
+			// aapt resource value: 0x7F0C002A
+			public const int yukihyo_state_sad = 2131492906;
 			
 			static Mipmap()
 			{

@@ -64,6 +64,9 @@ namespace yukihyo
             doneAnimation.IsPlaying = true;
             doneAnimation.IsVisible = true;
             buttonToHome.IsVisible = true;
+
+            yukihyoHabitatImage.Source = "happy_habitat_yukihyo";
+
             yukihyo.giveFood();
         }
 
@@ -73,6 +76,8 @@ namespace yukihyo
             doneAnimation.IsPlaying = false;
             doneAnimation.IsVisible = false;
             buttonToHome.IsVisible = false;
+
+            yukihyoHabitatImage.Source = "sad_habitat_yukihyo";
         }
     }
 }
