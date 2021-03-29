@@ -1,8 +1,8 @@
 bundleassemblies=false
-aotassemblies=false
-androidaotmode=none
+aotassemblies=true
+androidaotmode=normal
 androidembedprofilers=
-androidenableprofiledaot=false
+androidenableprofiledaot=true
 androiddextool=d8
 androidlinktool=
 androidpackageformat=apk

@@ -99,7 +99,7 @@ namespace yukihyo
             {
                 if(hunger.CurrentHungerState == HungerState.sad)
                 {
-                    await hungerStateIcon.FadeTo(1, 700, Easing.BounceIn);
+                    await hungerStateIcon.FadeTo(1, 50);
                 }
             });
         }
@@ -113,7 +113,7 @@ namespace yukihyo
             {
                 if (habitat.CurrentHabitatState == HabitatState.sad)
                 {
-                    await habitatStateIcon.FadeTo(1, 700, Easing.BounceIn);
+                    await habitatStateIcon.FadeTo(1, 50);
                 }
             });
         }
@@ -127,7 +127,7 @@ namespace yukihyo
             {
                 if (safety.CurrentSafetyState == SafetyState.sad)
                 {
-                    await safetyStateIcon.FadeTo(1, 700, Easing.BounceIn);
+                    await safetyStateIcon.FadeTo(1, 50);
                 }
             });
         }
@@ -135,7 +135,6 @@ namespace yukihyo
         /*Yukihyo Care Failed*/
         private async void YukihyoCareFailed()
         {
-            await DisplayAlert("Care", "Yukihyo failed to live the circumstances", "Start Again");
 
             yukihyo.Xp = 0;
             yukihyo.CurrentYukihyoState = YukihyoState.happy;
@@ -206,7 +205,7 @@ namespace yukihyo
         /*Reset Habitat Timer*/
         private void ResetHabitatTimer()
         {
-            timeKeeperHunger.StartTime = DateTime.Now;
+            timeKeeperHabitat.StartTime = DateTime.Now;
 
             StartHabitatTimer();
         }
@@ -231,16 +230,16 @@ namespace yukihyo
                 yukihyoNameLabel.Text = yukihyo.YukihyoName.ToString();
             }
 
-            if (timeElapsed.TotalSeconds < 20)
+            if (timeElapsed.TotalSeconds < 50)
             {
                 newYukihyoState = YukihyoState.happy;
                 
             }
-            else if (timeElapsed.TotalSeconds < 30)
+            else if (timeElapsed.TotalSeconds < 80)
             {
                 newYukihyoState = YukihyoState.neutral;
             }
-            else if (timeElapsed.TotalSeconds >= 40)
+            else if (timeElapsed.TotalSeconds >= 140)
             {
                 newYukihyoState = YukihyoState.sad;
             }
@@ -261,20 +260,20 @@ namespace yukihyo
 
             HungerState newHungerState = hunger.CurrentHungerState;
 
-            if (timeHungerElapsed.TotalSeconds < 20)
+            if (timeHungerElapsed.TotalSeconds < 40)
             {
                 newHungerState = HungerState.happy;
-                hungerProgressBar.ProgressTo(1, 1000, Easing.Linear);
+                hungerProgressBar.ProgressTo(1, 500, Easing.Linear);
             }
-            else if (timeHungerElapsed.TotalSeconds < 30)
+            else if (timeHungerElapsed.TotalSeconds < 60)
             {
                 newHungerState = HungerState.neutral;
-                hungerProgressBar.ProgressTo(0.5, 1000, Easing.Linear);
+                hungerProgressBar.ProgressTo(0.5, 500, Easing.Linear);
             }
-            else if (timeHungerElapsed.TotalSeconds >= 40)
+            else if (timeHungerElapsed.TotalSeconds >= 140)
             {
                 newHungerState = HungerState.sad;
-                hungerProgressBar.ProgressTo(0.1, 1000, Easing.Linear);
+                hungerProgressBar.ProgressTo(0.1, 500, Easing.Linear);
             }
 
             /* Update Hunger state */
@@ -296,17 +295,17 @@ namespace yukihyo
             if (timeHabitatElapsed.TotalSeconds < 20)
             {
                 newHabitatState = HabitatState.happy;
-                habitatProgressBar.ProgressTo(1, 1000, Easing.Linear);
+                habitatProgressBar.ProgressTo(1, 500, Easing.Linear);
             }
             else if (timeHabitatElapsed.TotalSeconds < 30)
             {
                 newHabitatState = HabitatState.neutral;
-                habitatProgressBar.ProgressTo(0.5, 1000, Easing.Linear);
+                habitatProgressBar.ProgressTo(0.5, 500, Easing.Linear);
             }
-            else if (timeHabitatElapsed.TotalSeconds >= 40)
+            else if (timeHabitatElapsed.TotalSeconds >= 140)
             {
                 newHabitatState = HabitatState.sad;
-                habitatProgressBar.ProgressTo(0.1, 1000, Easing.Linear);
+                habitatProgressBar.ProgressTo(0.1, 500, Easing.Linear);
             }
 
             /* Update Habitat state */
@@ -328,17 +327,17 @@ namespace yukihyo
             if (timeSafetyElapsed.TotalSeconds < 20)
             {
                 newSafetyState = SafetyState.happy;
-                safetyProgressBar.ProgressTo(1, 1000, Easing.Linear);
+                safetyProgressBar.ProgressTo(1, 500, Easing.Linear);
             }
             else if (timeSafetyElapsed.TotalSeconds < 30)
             {
                 newSafetyState = SafetyState.neutral;
-                safetyProgressBar.ProgressTo(0.5, 1000, Easing.Linear);
+                safetyProgressBar.ProgressTo(0.5, 500, Easing.Linear);
             }
-            else if (timeSafetyElapsed.TotalSeconds >= 40)
+            else if (timeSafetyElapsed.TotalSeconds >= 140)
             {
                 newSafetyState = SafetyState.sad;
-                safetyProgressBar.ProgressTo(0.1, 1000, Easing.Linear);
+                safetyProgressBar.ProgressTo(0.1, 500, Easing.Linear);
             }
 
             /* Update Safety state */

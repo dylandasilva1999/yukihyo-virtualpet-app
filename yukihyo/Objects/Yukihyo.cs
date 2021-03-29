@@ -232,5 +232,11 @@ namespace yukihyo.Objects
         {
             Xp = Xp + 200;
         }
+
+        /*Start Xp*/
+        public void startXp()
+        {
+            Xp = Xp + 150;
+        }
     }
 }

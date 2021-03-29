@@ -88,6 +88,7 @@
     <BundleResource Include="Resources\proxima_nova_thin.otf" />
     <BundleResource Include="Resources\love.json" />
     <BundleResource Include="Resources\done_animation.json" />
+    <BundleResource Include="Resources\snow_animation.json" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />

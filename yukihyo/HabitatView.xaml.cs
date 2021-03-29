@@ -26,6 +26,12 @@ namespace yukihyo
             await Navigation.PushModalAsync(new MainMenuView(), false);
         }
 
+        async void BackHome(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushModalAsync(new HomeView(), false);
+            resetUI();
+        }
+
         //Update UI
         void updateUI()
         {
@@ -44,6 +50,29 @@ namespace yukihyo
                 }
 
             });
+        }
+
+        public void Handle_SlideCompleted(object sender, System.EventArgs e)
+        {
+            ChangeTempDone();
+        }
+
+        /*Done Feeding Animation*/
+        public void ChangeTempDone()
+        {
+            tempSlider.IsVisible = false;
+            doneAnimation.IsPlaying = true;
+            doneAnimation.IsVisible = true;
+            buttonToHome.IsVisible = true;
+            yukihyo.giveFood();
+        }
+
+        private void resetUI()
+        {
+            tempSlider.IsVisible = true;
+            doneAnimation.IsPlaying = false;
+            doneAnimation.IsVisible = false;
+            buttonToHome.IsVisible = false;
         }
     }
 }

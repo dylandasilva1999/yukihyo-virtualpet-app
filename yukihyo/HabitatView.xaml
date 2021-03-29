@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="yukihyo.HabitatView"
              xmlns:st="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions"
-             xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" xmlns:local="clr-namespace:yukihyo.Interfaces"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
              BackgroundColor="#FFFFFF">
     <ContentPage.Content>
 
@@ -89,7 +90,7 @@
                     Style="{StaticResource StylisedHeader}"
                     HorizontalOptions="Center" 
                     HorizontalTextAlignment="Center" 
-                />
+                    />
                     <Label
                     x:Name="SubHabitatText"
                     Text="Change Temperature"
@@ -97,7 +98,7 @@
                     HorizontalOptions="Center" 
                     HorizontalTextAlignment="Center"
                     Margin="0,-5,0,0"
-                />
+                    />
                     <Image
                     x:Name="yukihyoImage"
                     Source="habitat_screen_image"
@@ -128,19 +129,57 @@
                         CornerRadius="22, 22, 22, 22"
                         VerticalOptions="End">
                         <StackLayout HorizontalOptions="CenterAndExpand">
-                            <Grid Margin="0, 10, 0, 0">
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="85"></RowDefinition>
-                                    <RowDefinition Height="85"></RowDefinition>
-                                    <RowDefinition Height="85"></RowDefinition>
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="85"></ColumnDefinition>
-                                    <ColumnDefinition Width="85"></ColumnDefinition>
-                                    <ColumnDefinition Width="85"></ColumnDefinition>
-                                </Grid.ColumnDefinitions>
-                               
-                            </Grid>
+                            <forms:AnimationView 
+			                    x:Name="doneAnimation" 
+			                    Animation="done_animation.json" 
+			                    Loop="False"
+			                    AutoPlay="False"
+                                WidthRequest="170"
+                                HeightRequest="170"
+                                Margin="0,20,0,0"
+                                IsPlaying="True"
+                                IsVisible="false"
+                            />
+                            <Button
+                                x:Name="buttonToHome"
+                                Style="{StaticResource ButtonOrange}"
+                                Text="Back to home"
+                                Margin="30,10,30,10"
+                                TextColor="#FFFFFF"
+                                Clicked="BackHome"
+                                IsVisible="false">
+                            </Button>
+                            <Label
+                                Text="Phew! Yukihyo is hot"
+                                Style="{StaticResource CardHeader}"
+                                HorizontalOptions="Center" 
+                                HorizontalTextAlignment="Center"
+                                Margin="0,70,0,0"
+                            />
+                            <Label
+                                Text="Quick add coldness!"
+                                Style="{StaticResource ManualText}"
+                                HorizontalOptions="Center" 
+                                HorizontalTextAlignment="Center"
+                                Margin="0,0,0,0"
+                            />
+                            <local:SlideForTempView HeightRequest="60" Rotation="0" WidthRequest="220" Margin="0,30,0,0" x:Name="tempSlider" SlideCompleted="Handle_SlideCompleted" IsVisible="True">
+                                <local:SlideForTempView.Thumb>
+                                    <Frame CornerRadius="10" HasShadow="false" BackgroundColor="#F37722" Padding="0">
+                                        <Image Source="temperature_icon.png" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="40" WidthRequest="40" />
+                                    </Frame>
+                                </local:SlideForTempView.Thumb>
+
+                                <local:SlideForTempView.TrackBar>
+                                    <Frame CornerRadius="10" HasShadow="false" BackgroundColor="#FFFFFF" Padding="0">
+                                        <Label Text="Make yukihyo cold" TextColor="#373737" Margin="30,0,0,0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+                                    </Frame>
+                                </local:SlideForTempView.TrackBar>
+
+                                <local:SlideForTempView.FillBar>
+                                    <Frame CornerRadius="10" HasShadow="false" BackgroundColor="#F37722" Padding="0" />
+                                </local:SlideForTempView.FillBar>
+                            </local:SlideForTempView>
                         </StackLayout>
                     </pancake:PancakeView>
                 </StackLayout>

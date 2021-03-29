@@ -114,6 +114,13 @@
             <Setter Property="TextColor" Value="#F37722"></Setter>
         </Style>
 
+        <!-- Card Header Style -->
+        <Style x:Key="CardHeader" TargetType="Label">
+            <Setter Property="FontFamily" Value="{StaticResource BoldHeaderFont}"></Setter>
+            <Setter Property="FontSize" Value="22"></Setter>
+            <Setter Property="TextColor" Value="#FFFFFF"></Setter>
+        </Style>
+
         <!-- Facts Regular Style -->
         <Style x:Key="FactsRegular" TargetType="Label">
             <Setter Property="FontFamily" Value="{StaticResource RegularBodyFont}"></Setter>

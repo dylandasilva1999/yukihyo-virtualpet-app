@@ -118,7 +118,7 @@ namespace yukihyo
         }
 
         /*Done Feeding Animation*/
-        async void FeedingDone()
+        public void FeedingDone()
         {
             doneAnimation.IsPlaying = true;
             doneAnimation.IsVisible = true;

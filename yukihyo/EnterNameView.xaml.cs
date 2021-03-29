@@ -26,11 +26,5 @@ namespace yukihyo
             yukihyo.YukihyoName = yukihyoNameInput.Text;
             await Navigation.PushModalAsync(new HomeView(), false);
         }
-
-        /*Animations On Load*/
-        protected override void OnAppearing()
-        {
-            base.OnAppearing();
-        }
     }
 }

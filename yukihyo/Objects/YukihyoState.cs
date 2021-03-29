@@ -23,7 +23,7 @@ namespace yukihyo.Objects
                 case YukihyoState.sad:
                     return "sad";
                 default:
-                    return "neutral";
+                    return "happy";
             }
         }
 

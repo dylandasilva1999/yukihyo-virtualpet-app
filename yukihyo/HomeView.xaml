@@ -4,6 +4,7 @@
              x:Class="yukihyo.HomeView"
              xmlns:st="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions"
              xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
              BackgroundColor="#FFFFFF">
     <ContentPage.Content>
 
@@ -100,14 +101,30 @@
                     x:Name="yukihyoImage"
                     Source="sad_yukihyo"
                     WidthRequest="300"
-                    HeightRequest="300">
+                    HeightRequest="300"
+                    IsVisible="true">
                     <Image.TranslationY>
                         <OnPlatform
                            x:TypeArguments="x:Double"
                            iOS="-10"
                            Android="-10" />
                     </Image.TranslationY>
+                    <!--<Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                                Tapped="yukihyoTapped" />
+                    </Image.GestureRecognizers>-->
                 </Image>
+                <forms:AnimationView 
+			        x:Name="snowAnimation" 
+			        Animation="snow_animation.json" 
+			        Loop="False"
+			        AutoPlay="False"
+                    WidthRequest="200"
+                    HeightRequest="250"
+                    Margin="0,-300,0,50"
+                    IsPlaying="False"
+                    IsVisible="false"
+                />
                 <pancake:PancakeView
                     CornerRadius="12"
                     HeightRequest="68"
