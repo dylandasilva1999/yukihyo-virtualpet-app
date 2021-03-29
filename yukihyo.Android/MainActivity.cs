@@ -8,6 +8,7 @@ using Android.Widget;
 using Android.OS;
 using Lottie.Forms.Droid;
 using Android.Util;
+using static Android.Bluetooth.BluetoothClass;
 
 namespace yukihyo.Droid
 {
@@ -20,6 +21,8 @@ namespace yukihyo.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(savedInstanceState);
+
+            Xamarin.Forms.Forms.SetFlags("DragAndDrop_Experimental");
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
