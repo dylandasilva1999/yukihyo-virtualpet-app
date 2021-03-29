@@ -135,15 +135,33 @@ namespace yukihyo
         /*Yukihyo Care Failed*/
         private async void YukihyoCareFailed()
         {
+            try
+            {
 
-            yukihyo.Xp = 0;
-            yukihyo.CurrentYukihyoState = YukihyoState.happy;
-            ResetTimer();
-            ResetHungerTimer();
-            ResetHabitatTimer();
-            ResetSafetyTimer();
+                yukihyo.Xp = 0;
+                yukihyo.CurrentYukihyoState = YukihyoState.happy;
+                ResetTimer();
+                ResetHungerTimer();
+                ResetHabitatTimer();
+                ResetSafetyTimer();
+                updateUI();
 
-            updateUI();
+                Device.BeginInvokeOnMainThread(async () =>
+                {
+                    var answer = yukihyo.CurrentYukihyoState;
+
+                    if (answer == YukihyoState.sad)
+                    {
+                        await DisplayAlert("Died", "Your Yukihyo has not made it", "New Yukihyo?", "Exit");
+                        yukihyoImage.Source = yukihyo.CurrentYukihyoState.ToString() + "_yukihyo";
+                        await Navigation.PushModalAsync(new EnterNameView(), false);
+                    }
+                });
+
+            } catch (Exception ex)
+            {
+                Console.WriteLine(ex.StackTrace);
+            }
         }
 
         /*Start General Timer*/
