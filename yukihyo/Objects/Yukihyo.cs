@@ -9,12 +9,15 @@ namespace yukihyo.Objects
         const string yukihyoNameKey = "yukihyoName";
         const string yukihyoStateKey = "yukihyoState";
         const string yukihyoXpKey = "yukihyoXp";
-        const string yukihyoHungerXpKey = "yukihyoXp";
-        const string yukihyoHabitatXpKey = "yukihyoXp";
-        const string yukihyoSafetyXpKey = "yukihyoXp";
+
+        const string yukihyoHungerXpKey = "yukihyoHungerXp";
         const string hungerStateKey = "hungerState";
-        const string habitatStateKey = "hungerState";
-        const string safetyStateKey = "hungerState";
+
+        const string yukihyoHabitatXpKey = "yukihyoHabitatXp";
+        const string habitatStateKey = "habitatState";
+
+        const string yukihyoSafetyXpKey = "yukihyoSafetyXp";
+        const string safetyStateKey = "safetyState";
 
         public Yukihyo()
         {
@@ -121,7 +124,7 @@ namespace yukihyo.Objects
 
             set
             {
-                App.Current.Properties[hungerStateKey] = HungerStates.GetHungerString(value);
+                App.Current.Properties[hungerStateKey] = HungerStates.GetHungerState(value);
             }
         }
 
@@ -163,7 +166,7 @@ namespace yukihyo.Objects
 
             set
             {
-                App.Current.Properties[habitatStateKey] = HabitatStates.GetHabitatString(value);
+                App.Current.Properties[habitatStateKey] = HabitatStates.GetHabitatState(value);
             }
         }
 
@@ -205,26 +208,29 @@ namespace yukihyo.Objects
 
             set
             {
-                App.Current.Properties[safetyStateKey] = SafetyStates.GetSafetyString(value);
+                App.Current.Properties[safetyStateKey] = SafetyStates.GetSafetyState(value);
             }
         }
 
         /*Feed Yukihyo*/
         public void giveFood()
         {
-            Xp = Xp + 300;
+            HungerXp = HungerXp + 100;
+            Xp = Xp + 300 + HungerXp;
         }
 
         /*Habitat Yukihyo*/
         public void changeTemp()
         {
-            Xp = Xp + 300;
+            HabitatXp = HabitatXp + 100;
+            Xp = Xp + 300 + HabitatXp;
         }
 
         /*Safety Yukihyo*/
         public void catchPoacher()
         {
-            Xp = Xp + 300;
+            SafetyXp = SafetyXp + 100;
+            Xp = Xp + 300 + SafetyXp;
         }
 
         /*Attention Yukihyo*/
@@ -237,6 +243,45 @@ namespace yukihyo.Objects
         public void startXp()
         {
             Xp = Xp + 150;
+        }
+
+        /*Reduce Hunger*/
+        public void Cease()
+        {
+            if (HungerXp > 0)
+            {
+                HungerXp = HungerXp - 5;
+            }
+            else
+            {
+                HungerXp = 0;
+            }
+        }
+
+        /*Reduce Habitat*/
+        public void Heat()
+        {
+            if (HabitatXp > 0)
+            {
+                HabitatXp = HabitatXp - 5;
+            }
+            else
+            {
+                HabitatXp = 0;
+            }
+        }
+
+        /*Reduce Safety*/
+        public void Unsafe()
+        {
+            if (SafetyXp > 0)
+            {
+                SafetyXp = SafetyXp - 5;
+            }
+            else
+            {
+                SafetyXp = 0;
+            }
         }
     }
 }

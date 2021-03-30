@@ -76,6 +76,7 @@ namespace yukihyo
                 else
                 {
                     xpLevel.Text = "XP " + Level.GetLevelFromXp(yukihyoXp).ToString();
+                    TapText.IsVisible = false;
                 }
 
                 if (yukihyoNameLabel.Text != yukihyo.YukihyoName)
@@ -87,49 +88,141 @@ namespace yukihyo
                 {
                     YukihyoCareFailed();
                 }
+
+                //hungerProgress(Convert.ToDouble((yukihyo.HungerXp)) / 100);
+                //habitatProgress(Convert.ToDouble((yukihyo.HabitatXp)) / 100);
+                //safetyProgress(Convert.ToDouble((yukihyo.SafetyXp)) / 100);
             });
+        }
+
+        ///*Hunger ProgressBar*/
+        //async private void hungerProgress(double i)
+        //{
+        //    await hungerProgressBar.ProgressTo(i, 100, Easing.Linear);
+        //}
+
+        ///*Habitat ProgressBar*/
+        //async private void habitatProgress(double i)
+        //{
+        //    await habitatProgressBar.ProgressTo(i, 100, Easing.Linear);
+        //}
+
+        ///*Safety ProgressBar*/
+        //async private void safetyProgress(double i)
+        //{
+        //    await safetyProgressBar.ProgressTo(i, 100, Easing.Linear);
+        //}
+
+        async void yukihyoTapped(System.Object sender, System.EventArgs e)
+        {
+            ResetHungerTimer();
+            ResetHabitatTimer();
+            ResetSafetyTimer();
+            ResetTimer();
+
+            updateHungerUI();
+            updateHabitatUI();
+            updateSafetyUI();
+            updateUI();
+
+            yukihyo.Cease();
+            yukihyo.Heat();
+            yukihyo.Unsafe();
+
+            TapText.IsVisible = false;
         }
 
         /*Update Hunger UI*/
         void updateHungerUI()
         {
-            hungerStateIcon.Source = "yukihyo_state_" + hunger.CurrentHungerState.ToString();
-
             Device.BeginInvokeOnMainThread(async () =>
             {
-                if(hunger.CurrentHungerState == HungerState.sad)
+                hungerStateIcon.Source = "yukihyo_state_" + hunger.CurrentHungerState.ToString();
+
+                if (hunger.CurrentHungerState == HungerState.sad)
                 {
                     await hungerStateIcon.FadeTo(1, 50);
+                    TapText.IsVisible = false;
+                    //GiveFood();
                 }
             });
+        }
+
+        /*Show Feed Interaction*/
+        async private void GiveFood()
+        {
+            var feedView = new FeedView();
+
+            feedView.Disappearing += (sender2, e2) => {
+                updateHungerUI();
+                StartHungerTimer();
+            };
+
+            await Navigation.PushModalAsync(feedView);
+
+            await DisplayAlert("Hungry", "Your Yukihyo is hungry", "Feed");
         }
 
         /*Update Habitat UI*/
         void updateHabitatUI()
         {
-            habitatStateIcon.Source = "yukihyo_state_" + habitat.CurrentHabitatState.ToString();
-
             Device.BeginInvokeOnMainThread(async () =>
             {
+                habitatStateIcon.Source = "yukihyo_state_" + habitat.CurrentHabitatState.ToString();
+
                 if (habitat.CurrentHabitatState == HabitatState.sad)
                 {
                     await habitatStateIcon.FadeTo(1, 50);
+                    TapText.IsVisible = false;
+                    //ChangeTemp();
                 }
             });
         }
 
+        /*Show Habitat Interaction*/
+        async private void ChangeTemp()
+        {
+            var habitatView = new HabitatView();
+
+            habitatView.Disappearing += (sender2, e2) => {
+                updateHabitatUI();
+                StartHabitatTimer();
+            };
+
+            await Navigation.PushModalAsync(habitatView);
+
+            await DisplayAlert("Hot", "Your Yukihyo is getting hot", "Change Temperature");
+        }
+
         /*Update Safety UI*/
         void updateSafetyUI()
-        {
-            safetyStateIcon.Source = "yukihyo_state_" + safety.CurrentSafetyState.ToString();
-
+        {    
             Device.BeginInvokeOnMainThread(async () =>
             {
+                safetyStateIcon.Source = "yukihyo_state_" + safety.CurrentSafetyState.ToString();
+
                 if (safety.CurrentSafetyState == SafetyState.sad)
                 {
                     await safetyStateIcon.FadeTo(1, 50);
+                    TapText.IsVisible = false;
+                    //CatchPoachers();
                 }
             });
+        }
+
+        /*Show Safety Interaction*/
+        async private void CatchPoachers()
+        {
+            var safetyView = new SafetyView();
+
+            safetyView.Disappearing += (sender2, e2) => {
+                updateSafetyUI();
+                StartSafetyTimer();
+            };
+
+            await Navigation.PushModalAsync(safetyView);
+
+            await DisplayAlert("Unsafe", "Your Yukihyo is not safe", "Catch Poachers");
         }
 
         /*Yukihyo Care Failed*/
@@ -137,25 +230,21 @@ namespace yukihyo
         {
             try
             {
-
                 yukihyo.Xp = 0;
                 yukihyo.CurrentYukihyoState = YukihyoState.happy;
                 ResetTimer();
-                ResetHungerTimer();
-                ResetHabitatTimer();
-                ResetSafetyTimer();
                 updateUI();
 
                 Device.BeginInvokeOnMainThread(async () =>
                 {
-                    var answer = yukihyo.CurrentYukihyoState;
+                    var yukihyoState = yukihyo.CurrentYukihyoState;
 
-                    if (answer == YukihyoState.sad)
+                    if (yukihyoState == YukihyoState.sad)
                     {
-                        await DisplayAlert("Died", "Your Yukihyo has not made it", "New Yukihyo?", "Exit");
+                        await DisplayAlert("died", "your yukihyo has not made it", "new yukihyo?", "exit");
                         yukihyoImage.Source = yukihyo.CurrentYukihyoState.ToString() + "_yukihyo";
                         await Navigation.PushModalAsync(new EnterNameView(), false);
-                    }
+                    } 
                 });
 
             } catch (Exception ex)
@@ -248,18 +337,26 @@ namespace yukihyo
                 yukihyoNameLabel.Text = yukihyo.YukihyoName.ToString();
             }
 
-            if (timeElapsed.TotalSeconds < 50)
+            if (timeElapsed.TotalSeconds < 30)
             {
                 newYukihyoState = YukihyoState.happy;
                 
             }
-            else if (timeElapsed.TotalSeconds < 80)
+            else if (timeElapsed.TotalSeconds < 50)
             {
                 newYukihyoState = YukihyoState.neutral;
             }
             else if (timeElapsed.TotalSeconds >= 140)
             {
                 newYukihyoState = YukihyoState.sad;
+            }
+
+            if (timeElapsed.TotalSeconds >= 20)
+            {
+                Device.BeginInvokeOnMainThread(() =>
+                {
+                    marmot.FadeTo(1, 500, Easing.Linear);
+                });
             }
 
             /* Update Yukihyo state */
@@ -278,20 +375,21 @@ namespace yukihyo
 
             HungerState newHungerState = hunger.CurrentHungerState;
 
-            if (timeHungerElapsed.TotalSeconds < 40)
+            if (timeHungerElapsed.TotalSeconds < 30)
             {
                 newHungerState = HungerState.happy;
                 hungerProgressBar.ProgressTo(1, 500, Easing.Linear);
             }
-            else if (timeHungerElapsed.TotalSeconds < 60)
+            else if (timeHungerElapsed.TotalSeconds < 50)
             {
                 newHungerState = HungerState.neutral;
                 hungerProgressBar.ProgressTo(0.5, 500, Easing.Linear);
             }
-            else if (timeHungerElapsed.TotalSeconds >= 140)
+            else if (timeHungerElapsed.TotalSeconds >= 70)
             {
                 newHungerState = HungerState.sad;
                 hungerProgressBar.ProgressTo(0.1, 500, Easing.Linear);
+                GiveFood();
             }
 
             /* Update Hunger state */
@@ -310,20 +408,21 @@ namespace yukihyo
 
             HabitatState newHabitatState = habitat.CurrentHabitatState;
 
-            if (timeHabitatElapsed.TotalSeconds < 20)
+            if (timeHabitatElapsed.TotalSeconds < 40)
             {
                 newHabitatState = HabitatState.happy;
                 habitatProgressBar.ProgressTo(1, 500, Easing.Linear);
             }
-            else if (timeHabitatElapsed.TotalSeconds < 30)
+            else if (timeHabitatElapsed.TotalSeconds < 60)
             {
                 newHabitatState = HabitatState.neutral;
                 habitatProgressBar.ProgressTo(0.5, 500, Easing.Linear);
             }
-            else if (timeHabitatElapsed.TotalSeconds >= 140)
+            else if (timeHabitatElapsed.TotalSeconds >= 80)
             {
                 newHabitatState = HabitatState.sad;
                 habitatProgressBar.ProgressTo(0.1, 500, Easing.Linear);
+                ChangeTemp();
             }
 
             /* Update Habitat state */
@@ -347,12 +446,12 @@ namespace yukihyo
                 newSafetyState = SafetyState.happy;
                 safetyProgressBar.ProgressTo(1, 500, Easing.Linear);
             }
-            else if (timeSafetyElapsed.TotalSeconds < 30)
+            else if (timeSafetyElapsed.TotalSeconds < 40)
             {
                 newSafetyState = SafetyState.neutral;
                 safetyProgressBar.ProgressTo(0.5, 500, Easing.Linear);
             }
-            else if (timeSafetyElapsed.TotalSeconds >= 140)
+            else if (timeSafetyElapsed.TotalSeconds >= 60)
             {
                 newSafetyState = SafetyState.sad;
                 safetyProgressBar.ProgressTo(0.1, 500, Easing.Linear);

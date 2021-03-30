@@ -12,7 +12,7 @@ namespace yukihyo.Objects
     }
     public class SafetyStates
     {
-        public static string GetSafetyString(SafetyState safetyState)
+        public static string GetSafetyState(SafetyState safetyState)
         {
             switch (safetyState)
             {
@@ -27,9 +27,9 @@ namespace yukihyo.Objects
             }
         }
 
-        public static SafetyState GetSafetyState(string safetyString)
+        public static SafetyState GetSafetyState(string safetyState)
         {
-            switch (safetyString)
+            switch (safetyState)
             {
                 case "happy":
                     return SafetyState.happy;
@@ -39,6 +39,22 @@ namespace yukihyo.Objects
                     return SafetyState.sad;
                 default:
                     return SafetyState.happy;
+            }
+        }
+
+        public static SafetyState GetStateFromHabitat(int safetyValue)
+        {
+            if (safetyValue < 40)
+            {
+                return SafetyState.sad;
+            }
+            else if (safetyValue < 70)
+            {
+                return SafetyState.neutral;
+            }
+            else
+            {
+                return SafetyState.happy;
             }
         }
     }

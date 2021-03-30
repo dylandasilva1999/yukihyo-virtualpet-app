@@ -12,7 +12,7 @@ namespace yukihyo.Objects
     }
     public class HungerStates
     {
-        public static string GetHungerString(HungerState hungerState)
+        public static string GetHungerState(HungerState hungerState)
         {
             switch (hungerState)
             {
@@ -27,9 +27,9 @@ namespace yukihyo.Objects
             }
         }
 
-        public static HungerState GetHungerState(string hungerString)
+        public static HungerState GetHungerState(string hungerState)
         {
-            switch (hungerString)
+            switch (hungerState)
             {
                 case "happy":
                     return HungerState.happy;
@@ -39,6 +39,22 @@ namespace yukihyo.Objects
                     return HungerState.sad;
                 default:
                     return HungerState.happy;
+            }
+        }
+
+        public static HungerState GetStateFromHunger(int hungerValue)
+        {
+            if (hungerValue < 40)
+            {
+                return HungerState.sad;
+            }
+            else if (hungerValue < 70)
+            {
+                return HungerState.neutral;
+            }
+            else
+            {
+                return HungerState.happy;
             }
         }
     }

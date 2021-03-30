@@ -12,7 +12,7 @@ namespace yukihyo.Objects
     }
     public class HabitatStates
     {
-        public static string GetHabitatString(HabitatState habitatState)
+        public static string GetHabitatState(HabitatState habitatState)
         {
             switch (habitatState)
             {
@@ -27,9 +27,9 @@ namespace yukihyo.Objects
             }
         }
 
-        public static HabitatState GetHabitatState(string habitatString)
+        public static HabitatState GetHabitatState(string habitatState)
         {
-            switch (habitatString)
+            switch (habitatState)
             {
                 case "happy":
                     return HabitatState.happy;
@@ -39,6 +39,22 @@ namespace yukihyo.Objects
                     return HabitatState.sad;
                 default:
                     return HabitatState.happy;
+            }
+        }
+
+        public static HabitatState GetStateFromHabitat(int habitatValue)
+        {
+            if (habitatValue < 40)
+            {
+                return HabitatState.sad;
+            }
+            else if (habitatValue < 70)
+            {
+                return HabitatState.neutral;
+            }
+            else
+            {
+                return HabitatState.happy;
             }
         }
     }
