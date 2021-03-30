@@ -20,17 +20,14 @@
     Snow Leopard
       <br />
       <br />
-      <a href="">View Demo</a>
+      <a href="https://youtu.be/94Vm1dexcJo">View Demo</a>
        ·
        <a href="https://github.com/dylandasilva1999/yukihyo-virtualpet-app/issues">Report Bug</a>
        ·
        <a href="https://github.com/dylandasilva1999/yukihyo-virtualpet-app/issues">Request Feature</a>
    </p>
 
-
 <!-- TABLE OF CONTENTS -->
-## Table of Contents
-
 ## Table of Contents
 
 * [About the Project](#about-the-project)
@@ -58,8 +55,6 @@
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
 
-
-
 <!--PROJECT DESCRIPTION-->
 ## About the Project
 
@@ -69,7 +64,7 @@ According to an article posted by Team Wanderlust, the snow leopard was listed a
 
 The Snow Leopard according to an article on Treehugger stated that in 2017 the status changed from endangered to vulnerable, which caused the decrease in the population by major threats such as "Habitat Loss", “Poaching”, “Decline in Prey”, “Competition With Lifestock”, “Retaliatory Killing" and finally ”Climate Change”.
 
-Yukihyo, is a virtual pet application to inform users on the impact climate change and poachers have on endangered animals such as the snow leopard, and encourage users to be aware about these dangers.
+Yukihyo is a virtual pet application to inform users on the impact climate change and poachers have on endangered animals such as the snow leopard and encourage users to be aware of these dangers.
 
 ### Built With
 
@@ -209,7 +204,7 @@ The `Development Process` is the technical implementations and functionality don
 
 To see a run through of the application, click below:
 
-[View Demo]()
+[View Demo](https://youtu.be/94Vm1dexcJo)
 
 <!-- ROADMAP -->
 ## Roadmap
