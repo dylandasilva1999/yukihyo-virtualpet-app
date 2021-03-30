@@ -233,6 +233,9 @@ namespace yukihyo
                 yukihyo.Xp = 0;
                 yukihyo.CurrentYukihyoState = YukihyoState.happy;
                 ResetTimer();
+                ResetHabitatTimer();
+                ResetHungerTimer();
+                ResetSafetyTimer();
                 updateUI();
 
                 Device.BeginInvokeOnMainThread(async () =>
@@ -349,14 +352,6 @@ namespace yukihyo
             else if (timeElapsed.TotalSeconds >= 140)
             {
                 newYukihyoState = YukihyoState.sad;
-            }
-
-            if (timeElapsed.TotalSeconds >= 20)
-            {
-                Device.BeginInvokeOnMainThread(() =>
-                {
-                    marmot.FadeTo(1, 500, Easing.Linear);
-                });
             }
 
             /* Update Yukihyo state */
