@@ -58,6 +58,8 @@
 <!--PROJECT DESCRIPTION-->
 ## About the Project
 
+![image1][image1]
+
 ### Project Description
 
 According to an article posted by Team Wanderlust, the snow leopard was listed at number eight out of the 10 most endangered animals in the world. I chose the snow leopard to bring awareness to one of the most beautiful and unique animal species in the world.
@@ -135,16 +137,52 @@ Assert.AreEqual(expectedState, result);
 
 ### Features
 
-* Name your yukihyo.
-* Rename your yukihyo.
-* Attend to these 3 needs.
-  - Habitat, Hunger and Safety.
-* Add coldness by sliding right.
-* Feed your yukihyo by tapping on marmots.
-* Catch poachers by dragging and dropping them into jail.
-* Discover the dangers on snow leopards.
-* Wake up your yukihyo and give belly rubs.
-* Yukihyo/Snow Leopard artwork created by me.
+### Name and Rename your yukihyo
+
+![image2][image2]
+
+Choose any name for your yukihyo, and change it any time.
+
+### Attend to youe yukihyo's needs
+
+![image3][image3]
+
+Habitat, Hunger and Safety.
+
+### Make your yukihyo cold
+
+![image4][image4]
+
+Add coldness by slidng the temperature to the right.
+
+### Feed your yukihyo
+
+![image5][image5]
+
+Feed your yukihyo marmots by tapping on them.
+
+### Keep your yukihyo safe
+
+![image6][image6]
+
+Catch the poachers by dragging and dropping them into jail.
+
+### Learn to care for yukihyo.
+
+![image7][image7]
+
+View the careguide and see why these interactions were chosen.
+
+### Give your yukihyo attention.
+
+![image8][image8]
+
+Wake up your yukihyo and give belly rubs.
+
+### Snow Leopard artwork created by me
+
+The artwork was created with Adobe Illustrator.
+
 
 ### Functionality
 
@@ -163,12 +201,15 @@ The `Conceptual Process` is the set of actions, activities and research that was
 
 ### Ideation
 
+![image9][image9]
 
 ### Wireframes
 
+![image10][image10]
 
 ### User-flow
 
+![image11][image11]
 
 <!-- DEVELOPMENT PROCESS -->
 ## Development Process
@@ -198,6 +239,8 @@ The `Development Process` is the technical implementations and functionality don
 
 <!-- MOCKUPS -->
 ## Mockups
+
+![image12][image12]
 
 <!-- VIDEO DEMONSTRATION -->
 ## Video Demonstration
@@ -251,7 +294,17 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 * [Flat Icon](https://www.flaticon.com/)
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[image1]: Images/1.png
-
+[image1]: Images/Image1.png
+[image2]: Images/Image2.png
+[image3]: Images/Image3.png
+[image4]: Images/Image4.png
+[image5]: Images/Image5.png
+[image6]: Images/Image6.png
+[image7]: Images/Image7.png
+[image8]: Images/Image8.png
+[image9]: Images/Image9.png
+[image10]: Images/Image10.png
+[image11]: Images/Image11.png
+[image12]: Images/Image12.jpg
 
  
