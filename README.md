@@ -49,6 +49,7 @@
    * [Future Development](#future-development)
 * [Mockups](#mockups)
 * [Video Demonstration](#video-demonstration)
+* [Promo Video](#promo-video)
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
 * [License](#license)
@@ -143,7 +144,7 @@ Assert.AreEqual(expectedState, result);
 
 Choose any name for your yukihyo, and change it any time.
 
-### Attend to youe yukihyo's needs
+### Attend to your yukihyo's needs
 
 ![image3][image3]
 
@@ -167,7 +168,7 @@ Feed your yukihyo marmots by tapping on them.
 
 Catch the poachers by dragging and dropping them into jail.
 
-### Learn to care for yukihyo.
+### Learn to care for your yukihyo.
 
 ![image7][image7]
 
@@ -248,6 +249,13 @@ The `Development Process` is the technical implementations and functionality don
 To see a run through of the application, click below:
 
 [View Demo](https://youtu.be/94Vm1dexcJo)
+
+<!-- PROMO VIDEO -->
+## Promo Video
+
+To see the promo video, click below:
+
+[View Promo Video](https://www.youtube.com/watch?v=HJAQizqFTlI)
 
 <!-- ROADMAP -->
 ## Roadmap
