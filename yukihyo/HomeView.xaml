@@ -109,8 +109,8 @@
                 <Image
                     x:Name="yukihyoImage"
                     Source="happy_yukihyo"
-                    WidthRequest="350"
-                    HeightRequest="350"
+                    WidthRequest="370"
+                    HeightRequest="370"
                     IsVisible="true">
                     <Image.TranslationY>
                         <OnPlatform
