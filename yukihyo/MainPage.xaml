@@ -29,24 +29,24 @@
                 </BoxView.HeightRequest>
             </BoxView>
             <Image Grid.Row="2"
-                WidthRequest="270"
-                HeightRequest="270"
+                WidthRequest="340"
+                HeightRequest="340"
                 Source="landing_screen"
                 x:Name="landingImage"
                 VerticalOptions="Start">
                 <Image.TranslationY>
                     <OnPlatform
                   x:TypeArguments="x:Double"
-                  iOS="-90"
-                  Android="-120" />
+                  iOS="-110"
+                  Android="-110" />
                 </Image.TranslationY>
             </Image>
             <StackLayout Grid.Row="2" Padding="48" Margin="0,-30,0,0">
                 <StackLayout.TranslationY>
                     <OnPlatform
                      x:TypeArguments="x:Double"
-                     iOS="150"
-                     Android="150" />
+                     iOS="230"
+                     Android="230" />
                 </StackLayout.TranslationY>
                 <Label Style="{StaticResource StylisedHeader}"
                    Grid.Row="2"
@@ -74,8 +74,8 @@
                 <StackLayout.TranslationY>
                     <OnPlatform
                             x:TypeArguments="x:Double"
-                            iOS="60"
-                            Android="60" />
+                            iOS="70"
+                            Android="70" />
                 </StackLayout.TranslationY>
                 <Label Style="{StaticResource WelcomeHeader}"
                    Text="Welcome"

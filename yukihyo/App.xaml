@@ -54,7 +54,7 @@
         <!-- Stylised Header Style -->
         <Style x:Key="StylisedHeader" TargetType="Label">
             <Setter Property="FontFamily" Value="{StaticResource StylisedHeaderFont}"></Setter>
-            <Setter Property="FontSize" Value="38"></Setter>
+            <Setter Property="FontSize" Value="45"></Setter>
             <Setter Property="TextColor" Value="#F37722"></Setter>
         </Style>
 
@@ -68,14 +68,14 @@
         <!-- Regular Body Black Style -->
         <Style x:Key="RegularBodyBlack" TargetType="Label">
             <Setter Property="FontFamily" Value="{StaticResource RegularBodyFont}"></Setter>
-            <Setter Property="FontSize" Value="20"></Setter>
+            <Setter Property="FontSize" Value="21"></Setter>
             <Setter Property="TextColor" Value="#373737"></Setter>
         </Style>
 
         <!-- Regular Body White Style -->
         <Style x:Key="RegularBodyWhite" TargetType="Label">
             <Setter Property="FontFamily" Value="{StaticResource RegularBodyFont}"></Setter>
-            <Setter Property="FontSize" Value="20"></Setter>
+            <Setter Property="FontSize" Value="21"></Setter>
             <Setter Property="TextColor" Value="#FFFFFF"></Setter>
         </Style>
 
@@ -103,21 +103,21 @@
         <!-- Tap Text Style -->
         <Style x:Key="TapText" TargetType="Label">
             <Setter Property="FontFamily" Value="{StaticResource ThinHeaderFont}"></Setter>
-            <Setter Property="FontSize" Value="15"></Setter>
+            <Setter Property="FontSize" Value="18"></Setter>
             <Setter Property="TextColor" Value="#373737"></Setter>
         </Style>
 
         <!-- Stats Header Style -->
         <Style x:Key="StatsHeader" TargetType="Label">
             <Setter Property="FontFamily" Value="{StaticResource RegularBodyFont}"></Setter>
-            <Setter Property="FontSize" Value="16"></Setter>
+            <Setter Property="FontSize" Value="18"></Setter>
             <Setter Property="TextColor" Value="#FFFFFF"></Setter>
         </Style>
 
         <!-- Facts Header Style -->
         <Style x:Key="FactsHeader" TargetType="Label">
             <Setter Property="FontFamily" Value="{StaticResource BoldHeaderFont}"></Setter>
-            <Setter Property="FontSize" Value="22"></Setter>
+            <Setter Property="FontSize" Value="28"></Setter>
             <Setter Property="TextColor" Value="#F37722"></Setter>
         </Style>
 
@@ -131,7 +131,7 @@
         <!-- Facts Regular Style -->
         <Style x:Key="FactsRegular" TargetType="Label">
             <Setter Property="FontFamily" Value="{StaticResource RegularBodyFont}"></Setter>
-            <Setter Property="FontSize" Value="20"></Setter>
+            <Setter Property="FontSize" Value="22"></Setter>
             <Setter Property="TextColor" Value="#F37722"></Setter>
         </Style>
 

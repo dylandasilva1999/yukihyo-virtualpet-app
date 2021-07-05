@@ -102,8 +102,8 @@
                     <Image
                     x:Name="yukihyoFeedImage"
                     Source="sad_feed_yukihyo"
-                    WidthRequest="250"
-                    HeightRequest="250">
+                    WidthRequest="360"
+                    HeightRequest="360">
                         <Image.TranslationY>
                             <OnPlatform
                            x:TypeArguments="x:Double"

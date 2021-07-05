@@ -85,8 +85,8 @@
                     <Image
                     x:Name="yukihyoImage"
                     Source="sleeping_yukihyo"
-                    WidthRequest="320"
-                    HeightRequest="320">
+                    WidthRequest="420"
+                    HeightRequest="420">
                         <Image.GestureRecognizers>
                             <TapGestureRecognizer
                                 Tapped="GiveLove" />
@@ -94,16 +94,16 @@
                         <Image.TranslationY>
                             <OnPlatform
                            x:TypeArguments="x:Double"
-                           iOS="-170"
-                           Android="-170" />
+                           iOS="-150"
+                           Android="-150" />
                         </Image.TranslationY>
                     </Image>
                     <StackLayout WidthRequest="300">
                         <pancake:PancakeView
                             CornerRadius="22"
-                            HeightRequest="160"
+                            HeightRequest="140"
                             WidthRequest="50"
-                            Margin="40,-60,40,0"
+                            Margin="40,-10,40,0"
                             BackgroundColor="#FFFFFF"
                             TranslationY="-120">
                             <Grid>

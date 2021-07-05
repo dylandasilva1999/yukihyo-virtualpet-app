@@ -52,8 +52,8 @@
                     <StackLayout.TranslationY>
                         <OnPlatform
                         x:TypeArguments="x:Double"
-                        iOS="70"
-                        Android="70" />
+                        iOS="100"
+                        Android="100" />
                     </StackLayout.TranslationY>
                     <Label
                     x:Name="CareGuideText"
@@ -76,10 +76,10 @@
 
                             <pancake:PancakeView
                                 CornerRadius="25"
-                                Margin="40,0,10,20" 
+                                Margin="40,20,10,20" 
                                 TranslationY="20">
                                 <Grid
-                                    HeightRequest="430"
+                                    HeightRequest="460"
                                     WidthRequest="300"
                                     BackgroundColor="#2B657A">
                                     <Grid.RowDefinitions>
@@ -106,8 +106,8 @@
                                         />
                                         <Image Grid.Row="1"
                                            Source="marmot_image"
-                                           HeightRequest="160"
-                                           WidthRequest="160"
+                                           HeightRequest="220"
+                                           WidthRequest="220"
                                            HorizontalOptions="Center">
                                             <Image.TranslationY>
                                                 <OnPlatform
@@ -121,7 +121,7 @@
                             </pancake:PancakeView>
                             <pancake:PancakeView
                                 CornerRadius="25"
-                                Margin="20,0,10,20" 
+                                Margin="20,20,10,20" 
                                 TranslationY="20">
                                 <Grid
                                     HeightRequest="430"
@@ -151,8 +151,8 @@
                                         />
                                         <Image Grid.Row="1"
                                            Source="habitat_image"
-                                           HeightRequest="140"
-                                           WidthRequest="140"
+                                           HeightRequest="180"
+                                           WidthRequest="180"
                                            HorizontalOptions="Center">
                                             <Image.TranslationY>
                                                 <OnPlatform
@@ -166,7 +166,7 @@
                             </pancake:PancakeView>
                             <pancake:PancakeView
                                 CornerRadius="25"
-                                Margin="20,0,10,20" 
+                                Margin="20,20,10,20" 
                                 TranslationY="20">
                                 <Grid
                                     HeightRequest="430"
@@ -196,8 +196,8 @@
                                         />
                                         <Image Grid.Row="1"
                                            Source="poacher_image"
-                                           HeightRequest="120"
-                                           WidthRequest="120"
+                                           HeightRequest="180"
+                                           WidthRequest="180"
                                            HorizontalOptions="Center">
                                             <Image.TranslationY>
                                                 <OnPlatform

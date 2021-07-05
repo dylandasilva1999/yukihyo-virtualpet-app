@@ -102,8 +102,8 @@
                     <Image
                     x:Name="yukihyoHabitatImage"
                     Source="sad_habitat_yukihyo"
-                    WidthRequest="280"
-                    HeightRequest="280"
+                    WidthRequest="400"
+                    HeightRequest="400"
                     Margin="-10,0,0,0">
                         <Image.TranslationY>
                             <OnPlatform
