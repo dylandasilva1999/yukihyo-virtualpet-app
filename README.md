@@ -5,6 +5,9 @@
 ![GitHub watchers](https://img.shields.io/github/watchers/dylandasilva1999/spacify-app?color=%23f37723)
 ![GitHub language count](https://img.shields.io/github/languages/count/dylandasilva1999/spacify-app?color=%23f37723)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dylandasilva1999/spacify-app?color=%23f37723)
+[![LinkedIn][linkedin-shield]][linkedin-url]
+[![Instagram][instagram-shield]][instagram-url]
+[![Behance][behance-shield]][behance-url]
 
 <h6 align="center">Dylan da Silva IDV 301</h6>
 <p align="center">
@@ -17,7 +20,8 @@
   <h3 align="center">Yukihyo</h3>
 
   <p align="center">
-    Snow Leopard
+    Virtual Pet Snow Leopard<br>
+      <a href="https://github.com/dylandasilva1999/explain-life-ios-app"><strong>Explore the docs »</strong></a>
       <br />
       <br />
       <a href="https://youtu.be/94Vm1dexcJo">View Demo</a>
@@ -31,12 +35,11 @@
 ## Table of Contents
 
 * [About the Project](#about-the-project)
-* * [Project Description](#project-description)
+  * [Project Description](#project-description)
   * [Built with](#built-with)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
-  * [How to install](#how-to-install)
-* [Unit Testing](#unit-testing)
+  * [Installation](#installation)
 * [Features and Functionality](#features-and-functionality)
    * [Features](#features)
    * [Functionality](#functionality)
@@ -45,11 +48,16 @@
    * [Wireframes](#wireframes)
    * [User-flow](#user-flow)
 * [Development Process](#development-process)
-   * [Implementation](#implementation)
-   * [Future Development](#future-development)
-* [Mockups](#mockups)
-* [Video Demonstration](#video-demonstration)
-* [Promo Video](#promo-video)
+   * [Implementation Process](#implementation-process)
+        * [Highlights](#highlights)
+        * [Challenges](#challenges)
+   * [Reviews and Testing](#reviews-and-testing)
+        * [Unit Testing](#unit-testing)
+   * [Future Implementation](#future-implementation)
+* [Final Outcome](#final-outcome)
+   * [Mockups](#mockups)
+   * [Video Demonstration](#video-demonstration)
+   * [Promotional Video](#promotional-video)
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
 * [License](#license)
@@ -86,9 +94,9 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-For development, the latest version of Visual Studio is required. The latest version can be downloaded from 
+For development, the latest version of Visual Studio is required. The latest version can be downloaded from [Visual Studio Download](https://visualstudio.microsoft.com/downloads/)
 
-### How to install
+### Installation
  
 1. Clone the repo
 ```sh
@@ -97,41 +105,6 @@ git clone https://github.com/dylandasilva1999/yukihyo-virtualpet-app.git
 2. Open the project
 
 Use `Open Workspace` in Visual Studio.
-
-## Unit Testing
-
-These are two examples of unit tests that can be run on this system. Navigate to Test Explorer to run the unit tests.
-
-### GetLevelFromXpTest
-
-The following test checks if the the correct level is assigned based on the Xp level. 
-```
-//ARRANGE
-int xp = 1500;
-int expectedLevel = 1;
-
-//ACT
-var result = Level.GetLevelFromXp(xp);
-
-//ASSERT
-Assert.AreEqual(expectedLevel, result);
-```
-
-### GetYukihyoStateTest
-
-The following test checks if the correct state is selected based on the yukihyo string. 
-
-```
-//ARRANGE
-string yukihyoString = "happy";
-var expectedState = YukihyoState.happy;
-
-//ACT
-var result = YukihyoStates.GetYukihyoState(yukihyoString);
-
-//ASSERT
-Assert.AreEqual(expectedState, result);
-```
 
 <!-- FEATURES AND FUNCTIONALITY-->
 ## Features and Functionality
@@ -184,7 +157,6 @@ Wake up your yukihyo and give belly rubs.
 
 The artwork was created with Adobe Illustrator.
 
-
 ### Functionality
 
 * `Relative`, `Stack` and `Grid` layouts were used to create the layouts.
@@ -217,21 +189,64 @@ The `Conceptual Process` is the set of actions, activities and research that was
 
 The `Development Process` is the technical implementations and functionality done in the backend of the application.
 
-### Implementation
+### Implementation Process
+
+#### Design Architecture
+`MVC` design architecture used for structuring Yukihyo.
+
+#### Highlights
+
+* One major highlight was the `research` I did to make Yukihyo and impactful application.
+* The `UI/UX design` that was built to bring awareness to the endangered Snow Leopard (Yukihyo).
+* A low-key highlight was being able to launch the `mobile application on a real device`.
+* `Finishing` the project brief in time of the `deadline`.
+* Adding custom `LottieFile Animations` into Yukihyo.
 
 #### Challenges
 
-* Understanding how C# integrates into Xamarin.Forms.
-* Making the application responsive to various screen types was a great learning curve challenge.
 * Using Xamarin.Forms to develop for cross-platform made way for interesting challenges.
 * Learning how to make use of `Objects` and `Classes`.
 * Grasping the concepts of `Public` and `Private` variables and functions.
 * Ugghhh obvously working with `Emulators` as well.
-* Letting interactions on different pages update the `Progress Bars`.
 
-### Future Development
+### Reviews and Testing
+The `Reviews and Testing` consists of `Unit Tests`, as well as if there were peer review testing.
 
-#### Future Changes
+#### Unit Testing
+These are two examples of unit tests that can be run on this system. Navigate to Test Explorer to run the unit tests.
+
+#### GetLevelFromXpTest
+
+The following test checks if the the correct level is assigned based on the Xp level. 
+```
+//ARRANGE
+int xp = 1500;
+int expectedLevel = 1;
+
+//ACT
+var result = Level.GetLevelFromXp(xp);
+
+//ASSERT
+Assert.AreEqual(expectedLevel, result);
+```
+
+#### GetYukihyoStateTest
+
+The following test checks if the correct state is selected based on the yukihyo string. 
+
+```
+//ARRANGE
+string yukihyoString = "happy";
+var expectedState = YukihyoState.happy;
+
+//ACT
+var result = YukihyoStates.GetYukihyoState(yukihyoString);
+
+//ASSERT
+Assert.AreEqual(expectedState, result);
+```
+
+#### Future Implementation
 
 * Fix `Progress Bars` to update when interaction is complete.
 * Improve on the `Performance` of the app, by updating the layout.
@@ -239,7 +254,9 @@ The `Development Process` is the technical implementations and functionality don
 * Refactor the game logic C# code of the app.
 
 <!-- MOCKUPS -->
-## Mockups
+## Final Outcome
+
+### Mockups
 
 ![image12][image12]
 
@@ -248,14 +265,14 @@ The `Development Process` is the technical implementations and functionality don
 
 To see a run through of the application, click below:
 
-[View Demo](https://youtu.be/94Vm1dexcJo)
+[View Demonstration](https://youtu.be/94Vm1dexcJo)
 
 <!-- PROMO VIDEO -->
-## Promo Video
+## Promotional Video
 
-To see the promo video, click below:
+To see the promotional video, click below:
 
-[View Promo Video](https://www.youtube.com/watch?v=HJAQizqFTlI)
+[View Promotional Video](https://www.youtube.com/watch?v=HJAQizqFTlI)
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -286,7 +303,7 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 <!-- LICENSE -->
 ## Contact
 
-* **Dylan da Silva** - 190082@virtualwindow.co.za
+* **Dylan da Silva** - [@dylandasilva.designs](https://www.instagram.com/dylandasilva.designs/) - dylandasilva.b@gmail.com
 * **Project Link** - https://github.com/dylandasilva1999/yukihyo-virtualpet-app
 
 <!-- ACKNOWLEDGEMENTS -->
@@ -300,6 +317,13 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 * [Why the Snow Leopard Population Is Decreasing](https://www.treehugger.com/are-snow-leopards-endangered-5072563)
 * [Different Layouts](https://www.youtube.com/watch?v=PVX0Wv_9kuA)
 * [Flat Icon](https://www.flaticon.com/)
+
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/dylan-da-silva-72b56a20a/
+[instagram-shield]: https://img.shields.io/badge/-Instagram-black.svg?style=flat-square&logo=instagram&colorB=555
+[instagram-url]: https://www.instagram.com/dylandasilva.designs/
+[behance-shield]: https://img.shields.io/badge/-Behance-black.svg?style=flat-square&logo=behance&colorB=555
+[behance-url]: https://www.behance.net/dylandasilva_
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [image1]: Images/Image1.png
